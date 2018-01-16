@@ -1,0 +1,260 @@
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course (master)
+$ mkdir module-02-task-repo
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course (master)
+$ cd module-02-task-repo
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git init
+Initialized empty Git repository in E:/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo/.git/
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git add .
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git commit -m "Added new file"
+[master (root-commit) db6a8d4] Added new file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git log
+commit db6a8d4089ba5538f8901227183fe0f909e661e6 (HEAD -> master)
+Author: Ihorbevz <web.ironteam@gmail.com>
+Date:   Mon Jan 15 22:37:39 2018 +0200
+
+    Added new file
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git diff
+diff --git a/index.html b/index.html
+index 1e33779..4b6daed 100644
+--- a/index.html
++++ b/index.html
+@@ -5,7 +5,7 @@
+        <title>Document</title>
+ </head>
+ <body>
+-
++       <h1>Hello World!</h1>
+
+ </body>
+ </html>
+\ No newline at end of file
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git add .
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git commit -m "added <h1> Hellow World"
+[master 6ee1f0e] added <h1> Hellow World
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git add .
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git commit -m "added <img>"
+On branch master
+Changes not staged for commit:
+        modified:   index.html
+
+no changes added to commit
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git add .
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git commit -m "added img"
+[master cec539d] added img
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git push --set-upstream https://github.com/Ironbevz/module-02-task-repo.git master
+Counting objects: 9, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 881 bytes | 440.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Ironbevz/module-02-task-repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'https://github.com/Ironbevz/module-02-task-repo.git'.
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git add .
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git commit -m "added p - lorem"
+[master 775a8fa] added p - lorem
+ 1 file changed, 1 insertion(+)
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git push --set-upstream https://github.com/Ironbevz/module-02-task-repo.git master
+Counting objects: 3, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 569 bytes | 569.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Ironbevz/module-02-task-repo.git
+   cec539d..775a8fa  master -> master
+Branch 'master' set up to track remote branch 'master' from 'https://github.com/Ironbevz/module-02-task-repo.git'.
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git log
+commit 775a8fad68eb3813461dc6b915475e0e06d2c458 (HEAD -> master)
+Author: Ihorbevz <web.ironteam@gmail.com>
+Date:   Mon Jan 15 22:56:39 2018 +0200
+
+    added p - lorem
+
+commit cec539d8534e8ef80f2fa33b20460559a2174f2c
+Author: Ihorbevz <web.ironteam@gmail.com>
+Date:   Mon Jan 15 22:45:39 2018 +0200
+
+    added img
+
+commit 6ee1f0e0ac8b1c533bfeb6b33c9b709f7bdb2db6
+Author: Ihorbevz <web.ironteam@gmail.com>
+Date:   Mon Jan 15 22:42:56 2018 +0200
+
+    added <h1> Hellow World
+
+commit db6a8d4089ba5538f8901227183fe0f909e661e6
+Author: Ihorbevz <web.ironteam@gmail.com>
+Date:   Mon Jan 15 22:37:39 2018 +0200
+
+    Added new file
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git pull
+From https://github.com/Ironbevz/module-02-task-repo
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git checkout -b "article"
+Switched to a new branch 'article'
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git add .
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git commit -m "added article"
+[article e1a5699] added article
+ 1 file changed, 3 insertions(+)
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git push --set-upstream https://github.com/Ironbevz/module-02-task-repo.git master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'https://github.com/Ironbevz/module-02-task-repo.git'.
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git add .
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git commit -m "added article"
+On branch article
+nothing to commit, working tree clean
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git push --set-upstream https://github.com/Ironbevz/module-02-task-repo.git
+fatal: The current branch article has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/Ironbevz/module-02-task-repo.git article
+
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git push --set-upstream https://github.com/Ironbevz/module-02-task-repo.git article
+Counting objects: 3, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ironbevz/module-02-task-repo.git
+ * [new branch]      article -> article
+Branch 'article' set up to track remote branch 'article' from 'https://github.com/Ironbevz/module-02-task-repo.git'.
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (article)
+$ git checkout master
+Switched to branch 'master'
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git merge article
+Updating 775a8fa..e1a5699
+Fast-forward
+ index.html | 3 +++
+ 1 file changed, 3 insertions(+)
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$ git push --set-upstream https://github.com/Ironbevz/module-02-task-repo.git master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/Ironbevz/module-02-task-repo.git
+   775a8fa..e1a5699  master -> master
+Branch 'master' set up to track remote branch 'master' from 'https://github.com/Ironbevz/module-02-task-repo.git'.
+
+i_ro_@IRONmashine MINGW64 /e/Data/Software/Restart/Save/YandexDisk/Документы/Work/Документи/Наука/GoIT/goit-fe-course/module-02-task-repo (master)
+$
+
