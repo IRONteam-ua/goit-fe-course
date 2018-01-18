@@ -1,26 +1,124 @@
-body {
-    margin-top: 100px;
-    margin-left: 480px; 
-    margin-right: 200px;
-    margin-bottom: 100px; 
-    border: 3px solid rgb(211,211,211);
-    border-radius: 5px;
+﻿body {
+    background-image: url(../img/background.png); /* Путь к фоновому изображению */
+    background-repeat: no-repeat; /* Фоновое изображение без его повторений,*/
+    background-size: cover; /* Масштабирует изображение с сохранением пропорций */
+    background-color: white; /* Цвет фона */
+   }
+
+#wrapper {
+    width: 480px; /*ширина обертки*/
+    height: 100%; /*высота обертки*/
+    background-color: white; /* Цвет фона */
+    margin-left: auto; /* Устанавливает величину отступа с лева */
+    margin-right: auto; /* Устанавливает величину отступа с права */
+    margin-top: 20px; /* Устанавливает величину отступа с верху */
+    margin-bottom: 20%; /* Устанавливает величину отступа с низу */    
+}
+
+
+            /* ---------------------------------------- */
+
+ header {
+    padding-left: 40px; /* Устанавливает величину отступа с лева */
+    padding-top: 50px; /*Устанавливает величину отступа с верху */
+    padding-right: 40px; /*Устанавливает величину отступа с права */
+}
+
+ article{
+    padding-top: 20px; /*Устанавливает величину отступа с верху */
+    padding-left: 35px; /* Устанавливает величину отступа с лева */
+    padding-right: 35px; /*Устанавливает величину отступа с права */
+    padding-bottom: 20px; /* Устанавливает величину отступа с низу */ 
+
+}
+
+.box-1{
+    padding-left: 35px; /* Устанавливает величину отступа с лева */
+    padding-right: 100px; /*Устанавливает величину отступа с права */
+    padding-bottom: 10px; /* Устанавливает величину отступа с низу */ 
+}
+.box-2{
+    padding-top: 40px; /*Устанавливает величину отступа с верху */
+    padding-left: 35px; /* Устанавливает величину отступа с лева */
+    padding-right: 35px; /*Устанавливает величину отступа с права */
+    padding-bottom: 10px; /* Устанавливает величину отступа с низу */ 
+}
+
+footer{   
+    padding-left: 35px; /* Устанавливает величину отступа с лева */
+    padding-right: 35px; /*Устанавливает величину отступа с права */
+    padding-bottom: 30px; /* Устанавливает величину отступа с низу */ 
+}
+
+.left-position {
+    display: inline-block; /* генерирует блочный элемент, который обтекается другими элементами */
+    height: 100px; /*высота блока*/
+    width: 50%; /*ширина блока*/
+    margin-right: -4px; /* Устанавливает величину отступа от правого края */
+}
+
+  .right-position{
+    display: inline-block; /* генерирует блочный элемент, который обтекается другими элементами */
+    height: 100px; /*высота блока*/
+    width: 50%; /*ширина блока*/
+    vertical-align: 45px; /* Выравнивает элемент по вертикали относительно своего родителя */
+
+ }
    
+            /* --------------------------------------------  */
 
+ .logo{ 
+        background-image: url(../img/logo.jpg); /* Путь к логотипу */
+        background-repeat: no-repeat; /*картинка не повторяеться*/
+        background-size: cover; /* Картинка целиком поместилась внутрь блока. */
+        margin-top: 30px; /*Устанавливает величину отступа с лева */
+        margin-right: auto; /*Устанавливает величину отступа с права */
+        width: 95%; /*Шырина логотипа */
+        height: 100px; /*Высота логотипа */
+        background-color: white; /* Цвет фона */
+ }
+
+ .font1{
+    text-align: left; /* Выравнивание текста по левому краю */
+    font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
+    color: #808080; /* задает цвет шрифта */
+    font-size: 25px; /* Задает размер шрифта */
 }
 
-h1, h2, h5, p, ol, ul {
-margin-left: 4%;
-margin-right: 2%;
+.font2{
+        font-family: "arial"; /* Устанавливает семейство шрифта arial */
+        font-size: 14px; /* Задает размер шрифта */
+        font-weight: 38px; /*  Устанавливает насыщенность шрифта */
+ }
+
+ .font3{
+    font-family: "arial"; /* Устанавливает семейство шрифта arial */
+    font-size: 12px; /* Задает размер шрифта */
+    font-weight: 38px; /*  Устанавливает насыщенность шрифта */
 }
 
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 480px;
-    height: 150px;
-
-    
+.font4{
+    font-family: "arial"; /* Устанавливает семейство шрифта arial */
+    font-size: 14px; /* Задает размер шрифта */
+    font-weight: 19px;   /*  Устанавливает насыщенность шрифта */
 }
+
+.font5{
+    font-family: "arial"; /* Устанавливает семейство шрифта arial */
+    font-size: 14px; /* Задает размер шрифта */
+    font-weight: 38px; /*  Устанавливает насыщенность шрифта */
+    letter-spacing: 1px;  /* Определяет интервал между символами в пределах элемента */
+}
+
+.line {
+    margin-left: 30px; /*Устанавливает величину отступа с лева */
+    margin-right: 30px; /*Устанавливает величину отступа с права */
+    background-color:#808080; /* Цвет линии */
+    height: 1px; /* Толщина линии */
+   }
+
+
+
+
+
+
