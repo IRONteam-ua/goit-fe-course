@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-image: url(../img/background.png); /* Путь к фоновому изображению */
     background-repeat: no-repeat; /* Фоновое изображение без его повторений,*/
     background-size: cover; /* Масштабирует изображение с сохранением пропорций */
@@ -52,58 +52,42 @@ footer{
 
 .left-position {
     display: inline-block; /* генерирует блочный элемент, который обтекается другими элементами */
-    height: 100px; /*высота блока*/
     width: 50%; /*ширина блока*/
     margin-right: -4px; /* Устанавливает величину отступа от правого края */
 }
 
   .right-position{
     display: inline-block; /* генерирует блочный элемент, который обтекается другими элементами */
-    height: 100px; /*высота блока*/
     width: 50%; /*ширина блока*/
-    vertical-align: 45px; /* Выравнивает элемент по вертикали относительно своего родителя */
+    vertical-align: top;
 
  }
    
             /* --------------------------------------------  */
 
- .logo{ 
-        background-image: url(../img/logo.jpg); /* Путь к логотипу */
-        background-repeat: no-repeat; /*картинка не повторяеться*/
-        background-size: cover; /* Картинка целиком поместилась внутрь блока. */
-        margin-top: 30px; /*Устанавливает величину отступа с лева */
-        margin-right: auto; /*Устанавливает величину отступа с права */
-        width: 95%; /*Шырина логотипа */
-        height: 100px; /*Высота логотипа */
-        background-color: white; /* Цвет фона */
- }
-
- .font1{
-    text-align: left; /* Выравнивание текста по левому краю */
-    font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
-    color: #808080; /* задает цвет шрифта */
-    font-size: 25px; /* Задает размер шрифта */
+.logo{
+    text-align: center; /* Выравнивание картинки по центру */
 }
 
-.font2{
-        font-family: "arial"; /* Устанавливает семейство шрифта arial */
-        font-size: 14px; /* Задает размер шрифта */
-        font-weight: 38px; /*  Устанавливает насыщенность шрифта */
- }
+ .heading{
+    font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
+    color: #808080; /* задает цвет шрифта */
+    
+}
 
- .font3{
+.font1{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
-    font-size: 12px; /* Задает размер шрифта */
+    font-size: 14px; /* Задает размер шрифта */
     font-weight: 38px; /*  Устанавливает насыщенность шрифта */
 }
 
-.font4{
+.font2{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
-    font-size: 14px; /* Задает размер шрифта */
+    font-size: 12px; /* Задает размер шрифта */
     font-weight: 19px;   /*  Устанавливает насыщенность шрифта */
 }
 
-.font5{
+.font3{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
     font-size: 14px; /* Задает размер шрифта */
     font-weight: 38px; /*  Устанавливает насыщенность шрифта */
