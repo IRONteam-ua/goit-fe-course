@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-image: url(../img/background.png); /* Путь к фоновому изображению */
     background-repeat: no-repeat; /* Фоновое изображение без его повторений,*/
     background-size: cover; /* Масштабирует изображение с сохранением пропорций */
@@ -69,9 +69,16 @@ footer{
     text-align: center; /* Выравнивание картинки по центру */
 }
 
+<<<<<<< HEAD
  h1 h2{
     font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
     color: #808080; /* задает цвет шрифта */
+=======
+ h1{
+    font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
+    color: #808080; /* задает цвет шрифта */
+    
+>>>>>>> ed436a848f9fe9de859ffcdf257c79af748f7fb2
 }
 
 h5{
