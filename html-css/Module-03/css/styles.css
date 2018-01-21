@@ -69,28 +69,26 @@ footer{
     text-align: center; /* Выравнивание картинки по центру */
 }
 
- .heading{
+ h1 h2{
     font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
     color: #808080; /* задает цвет шрифта */
-    
 }
 
-.font1{
+h5{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
     font-size: 14px; /* Задает размер шрифта */
-    font-weight: 38px; /*  Устанавливает насыщенность шрифта */
+    line-height: 19 px;
 }
 
 .font2{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
     font-size: 12px; /* Задает размер шрифта */
-    font-weight: 19px;   /*  Устанавливает насыщенность шрифта */
+    line-height: 17 px;
 }
 
 .font3{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
     font-size: 14px; /* Задает размер шрифта */
-    font-weight: 38px; /*  Устанавливает насыщенность шрифта */
     letter-spacing: 1px;  /* Определяет интервал между символами в пределах элемента */
 }
 
