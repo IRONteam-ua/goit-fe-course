@@ -45,7 +45,7 @@ body {
 }
 
 footer{   
-    padding-left: 35px; /* Устанавливает величину отступа с лева */
+    padding-left: 60px; /* Устанавливает величину отступа с лева */
     padding-right: 35px; /*Устанавливает величину отступа с права */
     padding-bottom: 30px; /* Устанавливает величину отступа с низу */ 
 }
@@ -60,7 +60,6 @@ footer{
     display: inline-block; /* генерирует блочный элемент, который обтекается другими элементами */
     width: 50%; /*ширина блока*/
     vertical-align: top;
-
  }
    
             /* --------------------------------------------  */
@@ -69,34 +68,33 @@ footer{
     text-align: center; /* Выравнивание картинки по центру */
 }
 
-<<<<<<< HEAD
- h1 h2{
-    font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
-    color: #808080; /* задает цвет шрифта */
-=======
  h1{
     font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
     color: #808080; /* задает цвет шрифта */
-    
->>>>>>> ed436a848f9fe9de859ffcdf257c79af748f7fb2
+}
+
+h2{
+    font-family: "Pathway Gothic One"; /* Устанавливает семейство шрифта Pathway Gothic One */
+    color: #808080; /* задает цвет шрифта */
 }
 
 h5{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
     font-size: 14px; /* Задает размер шрифта */
-    line-height: 19 px;
+    line-height: 19px;
 }
 
 .font2{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
     font-size: 12px; /* Задает размер шрифта */
-    line-height: 17 px;
+    line-height: 17px;
 }
 
 .font3{
     font-family: "arial"; /* Устанавливает семейство шрифта arial */
     font-size: 14px; /* Задает размер шрифта */
     letter-spacing: 1px;  /* Определяет интервал между символами в пределах элемента */
+    line-height: 25px;
 }
 
 .line {
