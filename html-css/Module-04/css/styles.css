@@ -10,7 +10,7 @@ body {
     background-image: url(../img/background.png); 
     background-repeat: no-repeat; 
     background-size: cover; 
-    background-color: white; 
+    background-color: white;
    }
 
 
@@ -25,11 +25,14 @@ body {
    /* text */
 
    h1, h2 {
+    text-transform: uppercase;
     font-family: 'Pathway Gothic One';
-    color: #808080;
+    font-weight: normal;
+    color: #263555;
     font-size: 32px;
     margin-top: 0px;
     margin-bottom: 48px;
+
 }
 
 h5 {    
@@ -38,10 +41,12 @@ h5 {
     line-height: 19px;
     font-weight: normal;
     margin-bottom: 19px;
+    color: #263555;
 }
 
 .text-1 {
     font-family: Arial;
+    font-weight: normal;
     font-size: 13px;
     line-height: 19px;
 }
@@ -51,9 +56,11 @@ h5 {
     width: 210px;
     border: 1px solid #b6b6b6;
     padding: 22px;
-    color: #263555;
     background-color: #fcfafa;
+    font-family: Arial;
     font-size: 15px;
+    line-height: 19px;
+    color: #263555;
 }
 
 .text-3::before {
@@ -71,9 +78,8 @@ h5 {
 .content {
     display: inline-block;
     width: 641px;
-    float: left;
-    margin-right: 51px;
     height: auto;
+
 }
    
 .section {
@@ -82,13 +88,24 @@ h5 {
     margin: 60px 0px 10px 0px;
 }
 
+.sidebar {
+    width: 210px;
+    display: inline-block;
+    margin-left: 48px;
+    vertical-align: top;
+    }
+
+
 .line {
     background-color:#DCDCDC;
     height: 0.5px;
    }
 
 .aside {
-    border: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    margin-left: 48px;
 }
 
 .box {
@@ -106,18 +123,12 @@ h5 {
 .img {
     width: 360px;
     height: 280px;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-right: 22px;
     margin-bottom: 20px;
     float: left;
 }
 
 
-.sidebar {
-    width: 210px;
-    display: inline-block;
-    }
 
 
     /*  */
