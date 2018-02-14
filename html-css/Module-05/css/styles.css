@@ -176,6 +176,7 @@ img {
     color: #263555;
     font-size: 22.41px;
     line-height: 60px;
+    font-weight: 200;
     
 
 }
@@ -194,6 +195,7 @@ img {
     color: #fff;
     line-height: 60px;
     text-transform: uppercase;
+    font-weight: 200;
 }
 
 .navigation {
@@ -249,11 +251,12 @@ img {
 
 .slogon {
     font-family: 'Pathway Gothic One';
-    font-size: 30.74px;
+    font-size: 30.42px;
     color: #263555;
     text-transform: uppercase;
     text-align: left;
     line-height: 130px;
+    font-weight: 200;
 }
 
 .card {
@@ -286,34 +289,37 @@ h3 {
     color: #fff;
     text-transform: uppercase;
     line-height: 25px;
+    font-weight: 200;
 }
 
 p {
-    font-family: Arial;
+    font-family: 'Arial';
     font-size: 10px;
-    color: #fff;
+    color: #cbc6c6;
     line-height: 15.4px;
     padding-left: 9px;
     padding-right: 9px;
     text-align: justify;
     
+    
 }
 
 .button {
-    display: block;
+    font-family: 'Arial';
+    font-size: 12.01px;
     position: absolute;
-    bottom: 18px;
+    bottom: 10px;
     right: 10px;
     width: 60px;
-    height: 20px;
-    background-color: #fff;
-    border-color: #cdc8c9;
-    border-radius: 3px;
-    border: 1px solid;
-    font-family: Arial;
-    font-size: 12px;
-    text-align: center;
+    height: 20px;   
+    border-radius: 10%;
+    background-color: #fbf6f8;
+    border: 1px solid #5a626f;
+    color: black;
+    text-decoration: none;
     line-height: 20px;
+    text-align: center;
+    
 }
 
 .button:hover {
