@@ -11,7 +11,47 @@ body {
     margin: 40px 360px 92px 360px;
 
 }
-   
+
+/* TEXT */
+
+.selection-text{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+} 
+
+.section-subtitle{
+    font-family: 'Kaushan Script';
+    color: #333333;
+    font-size: 24px;
+    font-weight: 300;
+}   
+
+.section-title{
+    font-family: 'Montserrat';
+    color: #333333;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    justify-content: center;
+    overflow: hidden; 
+    margin-top: 17px;
+}
+
+.red-line{
+    margin: auto;
+	width: 60px;
+	border-top:3px solid #f38181;
+    margin-bottom: 45px;
+    margin-top: 44px;
+}
+
+
+
+
 
 /* HEADER */
 
@@ -79,45 +119,6 @@ transition: all 0.5s ease;
 /* SECTION 1 */
 
 
-
-.icon-block{
-position: relative;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: center;
-padding-bottom: 115px;
-}
-
-.section-subtitle{
-    font-family: 'Kaushan Script';
-    color: #333333;
-    font-size: 24px;
-    font-weight: 300;
-}
-   
-
-.section-title{
-    font-family: 'Montserrat';
-    color: #333333;
-    font-size: 30px;
-    font-weight: 900;
-    text-transform: uppercase;
-    justify-content: center;
-    overflow: hidden; 
-    margin-top: 17px;
-}
-
-.red-line{
-    margin: auto;
-	width: 60px;
-	border-top:3px solid #f38181;
-    margin-bottom: 45px;
-    margin-top: 44px;
-}
-
-
-
 .article-portfolio{
 	display: flex;
 	justify-content:space-around;
@@ -177,15 +178,6 @@ align-items: center;
 }
 
 /*SECTION-2*/
-
- .selection-text{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;     
-} 
 
 .about-profile {
     display: flex;
