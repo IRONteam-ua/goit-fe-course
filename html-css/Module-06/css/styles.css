@@ -78,7 +78,7 @@ position: relative;
 justify-content:space-between;
 width: 490px;
 list-style: none;
-padding-top: 17px;
+padding-top: 16px;
 
 }
 
@@ -99,7 +99,7 @@ text-decoration: none;
 content: "";
 display: flex;
 position: absolute;
-top: 32px;
+top: 42px;
  width: 50px;
  height: 3px;
  background-color: #f38181;
