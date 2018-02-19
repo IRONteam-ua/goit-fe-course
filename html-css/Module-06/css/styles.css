@@ -7,9 +7,9 @@
 
 
 body {
-    max-width: 1200px;
-    margin: 40px 360px 92px 360px;
-
+	margin:auto;
+	padding-bottom: 95px;
+	width: 1200px;
 }
 
 /* TEXT */
