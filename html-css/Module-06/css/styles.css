@@ -14,7 +14,7 @@ body {
 
 /* TEXT */
 
-.selection-text{
+.section-text{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +22,25 @@ body {
     align-items: center;
 	justify-content: center;   
 } 
+
+
+.section-text::after{
+	content: "";
+	display: flex;
+	position: absolute;
+	top: 120px;
+	 width: 60px;
+	 height: 3px;
+	 background-color: #f38181;
+	 opacity: 0;
+	 transition: all 0.5s ease;
+	}
+	
+
+	.section-text::after{
+	opacity: 1;
+	transition: all 0.5s ease;
+	}
 
 .section-subtitle{
     font-family: 'Kaushan Script';
@@ -41,10 +60,12 @@ body {
     margin-top: 12px;
 }
 
+
+
 .red-line{
     margin: auto;
 	width: 60px;
-	border-top:3px solid #f38181;
+	border-top:3px solid green;
     margin-bottom: 65px;
     margin-top: 35px;
 }
@@ -52,7 +73,7 @@ body {
 .red-line-2 {
     margin: auto;
 	width: 60px;
-	border-top:3px solid #f38181;
+	border-top:3px solid green;
     margin-top: 35px;
 }
 
@@ -129,6 +150,7 @@ transition: all 0.5s ease;
 	display: flex;
 	justify-content:space-around;
 	flex-wrap:wrap;
+	padding-top: 100px;
 }
 
 .article-item-title{
@@ -181,7 +203,7 @@ align-items: center;
     color:#999999;
     padding-left: 122px;
 	padding-right: 127px;
-	padding-top: 40px;
+	padding-top: 140px;
 }
 
 /*SECTION-2*/
