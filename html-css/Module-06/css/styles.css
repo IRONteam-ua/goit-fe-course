@@ -61,23 +61,6 @@ body {
 }
 
 
-
-.red-line{
-    margin: auto;
-	width: 60px;
-	border-top:3px solid green;
-    margin-bottom: 65px;
-    margin-top: 35px;
-}
-
-.red-line-2 {
-    margin: auto;
-	width: 60px;
-	border-top:3px solid green;
-    margin-top: 35px;
-}
-
-
 /* HEADER */
 
 header{
@@ -222,7 +205,7 @@ align-items: center;
     flex-direction: row;
 	position: relative;
 	width: 380px;
-    height: 470px;
+	height: 470px;
 	background-color: #95e1d3;
 }
 
@@ -250,32 +233,30 @@ align-items: center;
 
 /*SLASHER*/
 
-
-
-
 .slasher{
-	opacity: 0;       
+	opacity: 0.1;       
 	position: absolute;
 	top: -10px;
 	left: -10px;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(to bottom, #f38181, #fce38a);
+    background-image: linear-gradient(to bottom, #f38181, #fce38a); 
 	transition: all 0.5s ease;
 }
 
-.profile-img-slasher{
-	opacity: 0.1;
-}
 
 .profile-item:hover .profile-img{
-	opacity: 0;
+	position: relative;
+	opacity: 0.1;
 	transition: all 0.5s ease;
+	bottom: 10px;
+	right: 10px;
 }
 
 .profile-item:hover>.slasher{
 	opacity: 1; 
 	transition: all 0.5s ease;
+
 }
 
 
@@ -304,7 +285,6 @@ align-items: center;
 
 .social-icon-item:hover{
 	background-color: #95e1d3;
-	background-image: url(../img/profiles/profile_01.jpg);
 }
 
 .afterblock-text{
