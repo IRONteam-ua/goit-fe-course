@@ -1,6 +1,8 @@
 @font-face {
     font-family: Wisdom; 
-    src: url(../Fonts/WisdomScriptAJ.otf) format('truetype'); 
+	src: url(../Fonts/WisdomScriptAJ.otf) format('otf'),
+		url(../Fonts/WisdomScriptAJ.ttf) format('truetype'),
+		url(../Fonts/WisdomScriptAJ.woff)  format('woff');  
 }
 
 @font-face {
