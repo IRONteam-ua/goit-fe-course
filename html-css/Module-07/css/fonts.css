@@ -13,8 +13,9 @@
 
 @font-face {
     font-family: Montserrat-bold; 
-	src: url(../fonts/montserratboldr.ttf) format('truetype'),
-		 url(../fonts/montserratbold.woff)  format('woff');   
+	src: url(../fonts/montserratbold.woff)  format('woff'),
+		url(../fonts/montserratboldr.ttf) format('truetype');
+		    
 }
 
 
