@@ -1,26 +1,26 @@
 @font-face {
     font-family: Wisdom; 
-	src: url(../Fonts/WisdomScriptAJ.woff2) format('woff2'),
-		url(../Fonts/WisdomScriptAJ.otf) format('otf'),
-		url(../Fonts/WisdomScriptAJ.woff)  format('woff');  
+	src: url(../fonts/WisdomScriptAJ.woff2) format('woff2'),
+		url(../fonts/WisdomScriptAJ.otf) format('otf'),
+		url(../fonts/WisdomScriptAJ.woff)  format('woff');  
 }
 
 @font-face {
     font-family: Montserrat; 
-	src: url(../Fonts/Montserrat-Regular.woff2) format('woff2'),
-		 url(../Fonts/Montserrat-Regular.ttf) format('truetype'),
-		 url(../Fonts/Montserrat-Regular.woff)  format('woff');  
+	src: url(../fonts/Montserrat-Regular.woff2) format('woff2'),
+		 url(../fonts/Montserrat-Regular.ttf) format('truetype'),
+		 url(../fonts/Montserrat-Regular.woff)  format('woff');  
 }
 
 @font-face {
     font-family: Droidserif; 
-	src: url(../Fonts/droidserifitalic.ttf) format('truetype'); 
+	src: url(../fonts/droidserifitalic.ttf) format('truetype'); 
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Roboto-Slab; 
-	src: url(../Fonts/RobotoSlab-Regular.woff2) format('woff2'),
-	url(../Fonts/RobotoSlab-Regular.ttf) format('truetype'),
-	url(../Fonts/RobotoSlab-Regular.woff)  format('woff');  
+	src: url(../fonts/RobotoSlab-Regular.woff2) format('woff2'),
+	url(../fonts/RobotoSlab-Regular.ttf) format('truetype'),
+	url(../fonts/RobotoSlab-Regular.woff)  format('woff');  
 }
