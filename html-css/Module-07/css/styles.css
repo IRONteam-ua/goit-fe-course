@@ -28,6 +28,7 @@ header{
 	line-height: 41px;
 	color: #fed136;
 	letter-spacing: 2.5px;
+	line-height: 41px;
 	}
 	
 	.menu-list{
@@ -52,6 +53,7 @@ header{
 	text-transform: uppercase;
 	font-weight: 900;
 	text-decoration: none;
+	line-height: 41px;
 	}
 	
 	.menu-link:hover{
@@ -79,7 +81,7 @@ header{
 	}   
 	
 	.section-title{
-		font-family: 'Montserrat';
+		font-family: 'Montserrat-bold';
 		color: #222222;
 		font-size: 28px;
 		font-weight: 900;
@@ -88,6 +90,7 @@ header{
 		overflow: hidden; 
 		margin-top: 9px;
 		margin-bottom: 16px;
+		line-height: 75px;
 	}
 
 	.section-subtitle{
@@ -124,6 +127,7 @@ header{
 		margin-bottom: 10px;
 		text-align: center;
 		color: #222222;
+		line-height: 75px;
 	}
 
 	.item-text {
