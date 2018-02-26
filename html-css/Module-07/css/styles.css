@@ -221,11 +221,10 @@ input:focus {
 	outline: none;
 } 
 
-input:focus:invalid, textarea:focus:invalid { /* when a field is considered invalid by the browser */
-	outline: red solid;
+input:focus:invalid, textarea:focus:invalid {
 	border-radius: 3px;	
 	}
-input:required:valid, textarea:required:valid { /* when a field is considered valid by the browser */
+input:required:valid, textarea:required:valid {
 		outline: green solid;
 		border-radius: 3px;	
 	}

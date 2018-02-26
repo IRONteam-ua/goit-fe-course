@@ -11,13 +11,13 @@
 
 @font-face {
     font-family: Montserrat-bold; 
-	src:url(../fonts/montserratboldr.ttf) format('truetype');	    
+	src:url(../fonts/montserratbold.woff) format('woff');	    
 }
 
 
 @font-face {
     font-family: Droidserif; 
-	src: url(../fonts/droidserifitalic.woff) format('truetype'); 
+	src: url(../fonts/DroidSerif-Italic.woff) format('woff'); 
 	font-style: italic;
 }
 
