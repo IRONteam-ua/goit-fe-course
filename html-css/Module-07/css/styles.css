@@ -222,11 +222,12 @@ input:focus {
 } 
 
 input:focus:invalid, textarea:focus:invalid {
+	outline: red solid;
 	border-radius: 3px;	
 	}
 input:required:valid, textarea:required:valid {
-		outline: green solid;
-		border-radius: 3px;	
+	outline: green solid;
+	border-radius: 3px;	
 	}
 
 textarea {
