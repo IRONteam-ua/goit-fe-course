@@ -241,7 +241,7 @@ textarea {
     border-radius: 3px;
 }
 
-input[type="submit"] {
+input[type="button"] {
 	position: absolute;
     display: block;
     margin: 15px auto;
