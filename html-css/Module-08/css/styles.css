@@ -1,0 +1,357 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* 320 */
+
+header{ 	/* header */
+min-width: 320px;
+min-height: 540px;
+margin: 0 auto; 
+background:  #000 url('../img/background.png') center top no-repeat;  
+background-size: cover;
+}
+
+.header_wrap{
+	margin:0 auto;
+    width:320px;
+    min-height: 540px;
+    text-align: center;
+}
+
+
+.header_naw_wrap{
+	height: 220px;
+	padding-top: 50px;
+	
+}
+
+#header_naw > li {
+	display: inline-block;
+	 list-style: none;
+	}
+
+	  .header_naw_link {
+		display: inline-block;
+		height: 34px;
+		width: 88px;
+		text-decoration: none;
+		color: white;
+		line-height: 2em;
+		text-align: center;
+		font-family: 'Montserrat';
+		font-weight: 900;
+		font-size: 0.9em;
+		border: 2px solid rgba(255, 255, 255, 0);
+		border-radius: 20px; 
+	}
+	.header_naw_link:hover {
+		  border-color: white;
+		  transition: 0.2s;
+		}
+	
+		.company_name {
+			text-align: center;
+			line-height: 36px;
+			margin-bottom: 30px;
+		  }
+	  
+		  .company_name_link {
+			  display: inline-block;
+			  text-decoration: none;
+			  color: white;
+			  margin: 0 auto;
+			  font-family: 'Montserrat';
+			  letter-spacing: 1px;
+			  font-size: 20px; 
+		  }
+
+		.header_info_text{
+			display: inline-block;
+			margin: 0 auto;
+			text-align: center; 
+		} 
+
+
+	.header_info_title{
+	display: inline-block;		
+	max-width: 380px;
+	margin: 0 auto;
+	color: white;
+	font-family: MontserratBold;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center; 
+
+}
+
+	.header_info_subtitle {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto; 
+	align-items: center;
+	color: white;
+	font-family: 'Roboto-Thin';
+	font-size: 18px;
+	font-weight: 100;
+	text-align: center; 
+
+}
+
+.header_info_button_link {
+	display: block;
+	margin: 0 auto;
+	width: 280px;
+	height: 40px;
+	background-color: #ff4e50;
+	border: 2px solid #ff4e50;
+	border-radius: 20px;
+	color: white;
+	font-family: Montserrat;
+	font-size: 0.8em;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+	line-height: 33px; 
+}
+
+.header_info_button_link:hover {
+	  color: #ff4e50;
+	  background-color: white;
+	  transition: 0.2s; 
+}
+
+/* main */
+
+.profiles_block{
+	min-width: 320px;
+	min-height: 1180px;
+	display: block;
+	text-align: center;
+}
+
+.profiles_block_title{
+	display: inline-block;		
+	max-width: 250px;
+	margin: 0 auto;
+	color: #333;
+	font-family: "Montserrat-Bold";
+	font-size: 21.98px;
+	font-weight: 700;
+	text-align: center; 
+}
+
+.profile_wrap{
+display: block;
+min-width: 200px;
+margin: 0 auto;
+}
+
+.person{
+	display: inline-block;
+	min-width: 150px;
+	margin: 0 auto;
+	text-align: center
+}
+.person_avatar{
+	width: 100%;
+	margin: 10px 0;
+	text-align: center
+}
+.person_photo{
+display: block;
+width: 121px;
+height: 121px;
+border-radius: 50%;
+margin: 5px auto 17px;
+}
+
+.person_icon{
+	position: relative;
+	bottom: 45px;
+	left: 40px;
+	z-index: 100; 
+}
+
+.person_name{
+	width: 220px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	color: #333;
+	font-family: 'Montserrat-Bold';
+	font-size: 0.9em;
+	font-weight: 700;
+	text-align: center; 
+}
+
+.person_title{
+	width: 220px;
+	margin: 0 auto;
+	color: #666;
+	font-family: 'Roboto';
+	font-size: 0.85em;
+	font-weight: 600;
+	text-align: center;
+}
+
+.main_button_link {
+	display: block;
+	margin: 0 auto;
+	width: 280px;
+	height: 40px;
+	background-color: #fff;
+	border: 2px solid #ff4e50;
+	border-radius: 20px;
+	color: #ff4e50;
+	font-family: Montserrat;
+	font-size: 0.8em;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+	line-height: 33px; 
+}
+
+.main_button_link:hover {
+	  color: #fff;
+	  background-color: #ff4e50;
+	  transition: 0.2s; 
+}
+
+/* /320 */
+/*321-767*/
+@media screen and (min-width: 321px) and (max-width: 767px){
+    .header_wrap{
+        margin:0 auto;
+		min-width: 320px;
+		min-height: 540px;
+		min-width: 320px;
+        text-align: center;
+    }
+   
+
+	
+
+}
+/*321-767*/
+/*768*/
+@media screen and (min-width: 768px) {
+	
+	.header_wrap{
+        margin:0 auto;
+        min-width: 768px;
+        min-height: 700px;
+        text-align: center;
+	}
+	.header_naw_wrap{
+		display: flex;
+		justify-content: space-between;
+		min-width: 660px;
+		padding: 51px 54px;
+	}
+	
+    .header_naw {
+		order: 1;
+    }
+	.company_name{
+		order: -1;
+
+    }
+
+    .header_info_title{
+        clear:both;
+		margin-top:10px;
+		font-size: 51.97px;
+		min-width: 600px;
+	}
+	
+	.header_info_subtitle{
+		margin-top:10px;
+		font-size: 23.99px;
+		min-width: 600px;
+	}
+
+	.header_info_button_link{
+	min-width: 200px;
+	}
+
+.profiles_block_title{
+	display: inline-block;
+	min-width: 500px;
+}
+
+
+figure{
+	display: inline-flex;
+	justify-content: space-around;
+	width:50%;
+	margin-left:-4px;
+}
+
+.person2{
+	order:1;
+}
+.person3{
+	order: -1;
+}
+
+
+
+
+}
+/*768*/
+/*769-1439*/
+@media screen and (min-width: 769px) and (max-width: 1439px){
+    .header_wrap{
+        margin:0 auto;
+        width:100%;
+        min-height: 540px;
+        text-align: center;
+    }
+   
+    header{
+		min-width: 769px;
+		max-width: 1439px;
+		height: 540px;
+		margin: 0 auto; 
+		background:  #000 url('../img/background.png') center top no-repeat;  
+		background-size: cover;
+
+	}
+}
+/*1440*/
+@media screen and (min-width: 1440px) {
+
+	.profile_wrap{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		clear:both;
+		width: 600px;
+			}
+
+    header h1{
+        clear:both;
+        margin-top:30px;
+    }
+    header{
+		min-width: 1440px;
+		height: 540px;
+		margin: 0 auto; 
+		background:  #000 url('../img/background.png') center top no-repeat;  
+		background-size: cover;
+
+	}
+	
+    .block{
+        display: inline-block;
+        width:50%;
+        margin-left:-4px;
+    }
+    button{
+        height:60px;
+    }
+}
