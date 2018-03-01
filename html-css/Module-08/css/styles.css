@@ -146,9 +146,19 @@ background-size: cover;
 }
 
 .profile_wrap{
-display: block;
+display: flex;
+flex-direction: column;
 min-width: 200px;
 margin: 0 auto;
+}
+
+#id2{
+order: 1;
+flex: 1;
+
+}
+#id3{
+order: -1;
 }
 
 .person{
@@ -156,6 +166,7 @@ margin: 0 auto;
 	min-width: 150px;
 	margin: 0 auto;
 	text-align: center
+
 }
 .person_avatar{
 	width: 100%;
@@ -283,26 +294,20 @@ margin: 5px auto 17px;
 	min-width: 500px;
 }
 
+.profile_wrap{
+	display: block;
+}
 
 figure{
-	display: inline-flex;
-	justify-content: space-around;
+	display: inline-block;
 	width:50%;
 	margin-left:-4px;
 }
 
-.person2{
-	order:1;
-}
-.person3{
-	order: -1;
-}
-
-
 
 
 }
-/*768*/
+/*/768*/
 /*769-1439*/
 @media screen and (min-width: 769px) and (max-width: 1439px){
     .header_wrap{
@@ -312,15 +317,7 @@ figure{
         text-align: center;
     }
    
-    header{
-		min-width: 769px;
-		max-width: 1439px;
-		height: 540px;
-		margin: 0 auto; 
-		background:  #000 url('../img/background.png') center top no-repeat;  
-		background-size: cover;
 
-	}
 }
 /*1440*/
 @media screen and (min-width: 1440px) {
@@ -332,26 +329,3 @@ figure{
 		clear:both;
 		width: 600px;
 			}
-
-    header h1{
-        clear:both;
-        margin-top:30px;
-    }
-    header{
-		min-width: 1440px;
-		height: 540px;
-		margin: 0 auto; 
-		background:  #000 url('../img/background.png') center top no-repeat;  
-		background-size: cover;
-
-	}
-	
-    .block{
-        display: inline-block;
-        width:50%;
-        margin-left:-4px;
-    }
-    button{
-        height:60px;
-    }
-}
