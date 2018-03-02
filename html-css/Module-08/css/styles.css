@@ -127,6 +127,7 @@ background-size: cover;
 
 /* main */
 
+
 .profiles_block{
 	min-width: 320px;
 	min-height: 1180px;
@@ -146,29 +147,21 @@ background-size: cover;
 }
 
 .profile_wrap{
-display: flex;
-flex-direction: column;
+display: block;
 min-width: 200px;
 margin: 0 auto;
 }
 
-#id2{
-order: 1;
-flex: 1;
-
-}
-#id3{
-order: -1;
-}
-
 .person{
-	display: inline-block;
+	display: block;
 	min-width: 150px;
+	max-width: 100%;
 	margin: 0 auto;
 	text-align: center
 
 }
 .person_avatar{
+	display: block;
 	width: 100%;
 	margin: 10px 0;
 	text-align: center
@@ -298,11 +291,30 @@ margin: 5px auto 17px;
 	display: block;
 }
 
-figure{
-	display: inline-block;
-	width:50%;
+.person{
+	display: inline-flex;
+	justify-content: center;
+	min-width:50%;
 	margin-left:-4px;
 }
+
+.person > #id1{
+flex: 1;
+order: 1;	
+}
+
+.person > #id2{
+	flex: 2;
+	order: 3;
+	}
+	.person > #id3{
+		flex: 3;
+	order: 2;
+	}
+	.person > #id4{
+		flex: 4;
+		order: 4;
+		}
 
 
 
