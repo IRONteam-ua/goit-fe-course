@@ -9,9 +9,7 @@ html {font-size: 14px;}
 
 header{ 	/* header */
 min-width: 320px;
-max-width: 1440px;
 min-height: 540px;
-max-height: 700px;
 margin: 0 auto; 
 background:  #000 url('../img/background_mobile.png') no-repeat;  
 /* background-size: cover; */
@@ -114,7 +112,6 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 	width: 280px;
 	height: 40px;
 	background-color: #ff4e50;
-	border: 2px solid #ff4e50;
 	border-radius: 20px;
 	color: white;
 	font-family: Montserrat;
@@ -373,7 +370,7 @@ order: 1;
 @media screen and (min-width: 1440px) {
 
 	header{ 	/* header */
-		min-width: 1440px;
+		min-width: 100vw;
 		min-height: 700px;
 		margin: 0 auto; 
 		background:  #000 url('../img/background.png') no-repeat;  
@@ -435,17 +432,4 @@ order: 1;
 				
 			} 
 
-		}
-/* 
-		@media screen and (min-width: 1440px) and (max-width: 1920px){
-			header{
-				background:  #000 url('../img/background.png') center no-repeat; 
-			
-			}
-			.header_wrap{
-				margin:0 auto;
-				width: 768px;
-				min-height: 100%;
-				text-align: center;
-			}
-		}   */
+}
