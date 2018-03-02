@@ -9,7 +9,9 @@ html {font-size: 14px;}
 
 header{ 	/* header */
 min-width: 320px;
+max-width: 1440px;
 min-height: 540px;
+max-height: 700px;
 margin: 0 auto; 
 background:  #000 url('../img/background_mobile.png') no-repeat;  
 /* background-size: cover; */
@@ -19,23 +21,21 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 .header_wrap{
 	margin:0 auto;
     width:100%;
-    height: 540px;
+    height: 100%;
     text-align: center;
 }
 
 
 .header_naw_wrap{
 	height: 40.74%;
-	padding-top: 25px;
-
-
+	padding-top: 1.786rem;
 	
 }
 
 #header_naw > li {
 	display: inline-block;
 	 list-style: none;
-	 margin-bottom: 100px;
+	margin-bottom: 32%;
 	width: 100px;
 	margin-left: -20px;
 	}
@@ -46,7 +46,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 		width: 80px;
 		text-decoration: none;
 		color: white;
-		line-height: 25px;
+		line-height: 2rem;
 		text-align: center;
 		font-family: 'Montserrat-bold';
 		font-size: 1rem;
@@ -59,7 +59,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 		}
 	
 		.company_name {
-			line-height: 36px;
+			line-height: 1.389rem;
 
 		  }
 	  
@@ -67,8 +67,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 			  text-decoration: none;
 			  color: white;
 			  margin: 0 auto;
-			  font-family: 'Montserrat';
-			  font-weight: 900;
+			  font-family: 'Montserrat-bold';
 			  letter-spacing: 1px;
 			  font-size: 1.429rem; 
 		  }
@@ -77,20 +76,20 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 			display: block;
 			margin: 0 auto;
 			text-align: center;
-			
 			 
 		} 
 
 
 	.header_info_title{
 	display: block;
-	max-width: 90%;
+	max-width: 290px;
 	margin: 0 auto;
 	color: white;
 	font-family: 'Montserrat-bold';
 	font-size: 2.143rem;
 	text-transform: uppercase;
 	text-align: center;
+	padding-top:  2.143rem;
 
 }
 
@@ -100,7 +99,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 	color: white;
 	font-family: 'Roboto-Thin';
 	font-size: 1.286rem;
-	padding-top: 20px;
+	padding-top: 1.429rem;
 	padding-bottom: 4%;
 	letter-spacing: 1px;
 	text-align: center;
@@ -123,7 +122,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 	font-weight: 700;
 	text-decoration: none;
 	text-align: center;
-	line-height: 33px; 
+	line-height: 2.357rem; 
 }
 
 .header_info_button_link:hover {
@@ -151,7 +150,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 	font-size: 1.5rem;
 	font-weight: 700;
 	text-align: center; 
-	padding-top: 70px;
+	padding-top: 5rem;
 }
 
 .profile_wrap{
@@ -160,7 +159,7 @@ text-align: center;
 }
 
 .person{
-	padding-top: 20px;
+	padding-top: 1.429rem;
 	display: block;
 	min-width: 100px;
 	max-width: 100%;
@@ -168,16 +167,15 @@ text-align: center;
 	text-align: center;
 }
 .person_avatar{
-	display: block;
-	max-width: 100%;
+	display: inline-block;
+	position: relative;
+	width: 170px;
 	margin: auto;
 	text-align: center;
 	text-decoration: none;
 
 }
 .person_photo{
-position: relative;
-display: inline-block;
 width: 121px;
 height: 121px;
 border-radius: 50%;
@@ -185,11 +183,11 @@ margin: 5px auto 17px;
 }
 
 .person_icon{
-	position: relative;
-	bottom: 10px;
-	right: 45px;
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
 	z-index: 100;
-	padding: -115px;
+
 	
 }
 
@@ -246,34 +244,38 @@ margin: 5px auto 17px;
 @media screen and (min-width: 321px) and (max-width: 767px){
 	header{
 		background:  #000 url('../img/background_tablet.png') center no-repeat; 
-		background-size: cover;  
+	
 	}
     .header_wrap{
         margin:0 auto;
-		max-width: %;
+		width: 320px;
 		min-height: 100%;
         text-align: center;
     }
    
 
-	
-
 }
 /*321-767*/
 /*768*/
 @media screen and (min-width: 768px) {
+
+	header{ 	/* header */
+		min-width: 320px;
+		max-width: 1440px;
+		min-height: 540px;
+		max-height: 700px;
+		margin: 0 auto; 
+		background:  #000 url('../img/background_tablet.png') no-repeat;  
+		/* background-size: cover; */
+	}	
 	
-	.header_wrap{
-        margin:0 auto;
-        min-width: 768px;
-        min-height: 700px;
-        text-align: center;
-	}
+
+
 	.header_naw_wrap{
 		display: flex;
 		justify-content: space-between;
-		min-width: 660px;
-		padding: 51px 54px;
+		min-width: 90%;
+		padding: 3rem;
 	}
 	
     .header_naw {
@@ -285,78 +287,165 @@ margin: 5px auto 17px;
     }
 
     .header_info_title{
-        clear:both;
-		margin-top:10px;
-		font-size: 51.97px;
+		font-size: 3.643rem;
 		min-width: 600px;
+		padding-top: 2.857rem;
 	}
 	
 	.header_info_subtitle{
-		margin-top:10px;
-		font-size: 23.99px;
+		font-size: 1.643rem;
+		padding-top:  1.786rem;
 		min-width: 600px;
 	}
 
+	.header_info_button{
+		padding-top: 0.7143rem;
+	}
+
 	.header_info_button_link{
-	min-width: 200px;
+	width: 240px;
+	font-size: 0.9286rem;
 	}
 
 .profiles_block_title{
-	display: inline-block;
 	min-width: 500px;
 }
 
+
 .profile_wrap{
-	display: block;
+	display: flex;
+	/* padding-left: 7.143rem; */
+	flex-wrap: wrap;
+
 }
 
-.person{
-	display: inline-flex;
-	justify-content: center;
-	min-width:50%;
-	margin-left:-4px;
-}
+  .person{
+	min-width:35%;
 
-.person > #id1{
+}  
+
+ .profile_wrap > #id1{
 flex: 1;
 order: 1;	
 }
 
-.person > #id2{
+.profile_wrap > #id2{
 	flex: 2;
 	order: 3;
 	}
-	.person > #id3{
+	.profile_wrap > #id3{
 		flex: 3;
 	order: 2;
 	}
-	.person > #id4{
+	.profile_wrap > #id4{
 		flex: 4;
 		order: 4;
 		}
-
-
-
+		.person_title{
+			overflow: hidden;
+			width: 180px;
+			
+			}
+			.main_button_link{
+				width: 188px;
+				font-size: 0.9286rem;
+				
+			} 
 }
 /*/768*/
 /*769-1439*/
 @media screen and (min-width: 769px) and (max-width: 1439px){
+	header{
+		background:  #000 url('../img/background.png') center no-repeat; 
+	
+	}
     .header_wrap{
         margin:0 auto;
-        width:100%;
-        min-height: 540px;
+		width: 768px;
+		min-height: 100%;
         text-align: center;
     }
    
+
 
 }
 /*1440*/
 @media screen and (min-width: 1440px) {
 
-	.profile_wrap{
+	header{ 	/* header */
+		min-width: 1440px;
+		min-height: 700px;
+		margin: 0 auto; 
+		background:  #000 url('../img/background.png') no-repeat;  
+		background-size: cover;
+	}	
+	
+
+
+	.header_naw_wrap{
 		display: flex;
 		justify-content: space-around;
-		flex-direction: row;
-		clear:both;
-		width: 600px;
+		width: 100%;
+	}
+	
+    .header_info_title{
+		font-size: 3.714rem;
+	}
+	
+	.header_info_subtitle{
+		font-size:  1.714rem;
+
+	}
+
+
+	.header_info_button_link{
+	width: 240px;
+	font-size: 0.9286rem;
+	}
+
+.profiles_block_title{
+	min-width: 500px;
+}
+
+
+.profile_wrap{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	max-width: 65.4%;
+
+
+}
+
+  .person{
+	min-width:35%;
+
+
+}  
+
+		.person_title{
+			width: 185px;
+			font-size: 1rem;
+			
 			}
+			.main_button_link{
+				width: 190px;
+				font-size: 1rem;
+				
+			} 
+
+		}
+/* 
+		@media screen and (min-width: 1440px) and (max-width: 1920px){
+			header{
+				background:  #000 url('../img/background.png') center no-repeat; 
+			
+			}
+			.header_wrap{
+				margin:0 auto;
+				width: 768px;
+				min-height: 100%;
+				text-align: center;
+			}
+		}   */
