@@ -308,18 +308,12 @@ margin: 5px auto 17px;
 	min-width: 500px;
 }
 
-profiles_bloc{
-
-	margin: 0 auto;
-	
-
-}
 
 .profile_wrap{
 	display: flex;
-	margin-left: 7.143rem;
+	padding-left: 7.143rem;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-self: center;
 
 }
