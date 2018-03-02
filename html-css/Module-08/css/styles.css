@@ -114,12 +114,12 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 	background-color: #ff4e50;
 	border-radius: 20px;
 	color: white;
-	font-family: Montserrat;
+	font-family: 'Montserrat';
 	font-size: 1rem;
 	font-weight: 700;
 	text-decoration: none;
 	text-align: center;
-	line-height: 2.357rem; 
+	line-height: 2.657rem; 
 }
 
 .header_info_button_link:hover {
