@@ -311,15 +311,15 @@ margin: 5px auto 17px;
 
 .profile_wrap{
 	display: flex;
-	padding-left: 7.143rem;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-self: center;
+	min-width: 30.625rem;
+	max-height: 39.25rem;
 
 }
 
   .person{
-	min-width:35%;
+	min-width: 50%;
+	padding-bottom: 3.125rem;
 
 }  
 
@@ -408,17 +408,17 @@ order: 1;
 
 
 .profile_wrap{
-	display: flex;
+    display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	max-width: 65.4%;
+	min-width: 58.75rem;
+
 
 
 }
 
   .person{
-	min-width:35%;
+	min-width: 25%;
+	padding-bottom: 3.125rem;
 
 
 }  
