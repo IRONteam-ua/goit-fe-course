@@ -9,7 +9,6 @@ html {font-size: 14px;}
 
 .container{
 	margin: 0 auto;
-	display: block;
 }
 
 header{ 	/* header */
@@ -406,7 +405,7 @@ order: 1;
 .profile_wrap{
     display: flex;
 	flex-direction: row;
-	min-width: 58.75rem;
+	width: 65rem;
 
 
 
