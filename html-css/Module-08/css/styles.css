@@ -135,7 +135,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 
 
 .profiles_block{
-	min-width: 320px;
+	width: 320px;
 	display: block;
 	text-align: center;
 	margin: 0 auto;
@@ -143,7 +143,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 
 .profiles_block_title{
 	display: inline-block;		
-	max-width: 90%;
+	width: 90%;
 	margin: 0 auto;
 	color: #333;
 	font-family: "Montserrat-Bold";
@@ -290,7 +290,7 @@ margin: 5px auto 17px;
 	.header_info_subtitle{
 		font-size: 1.643rem;
 		padding-top:  1.786rem;
-		min-width: 600px;
+		width: 600px;
 	}
 
 	.header_info_button{
@@ -303,14 +303,14 @@ margin: 5px auto 17px;
 	}
 
 .profiles_block_title{
-	min-width: 500px;
+	width: 500px;
 }
 
 
 .profile_wrap{
 	display: flex;
 	flex-wrap: wrap;
-	min-width: 30.625rem;
+	width: 35.625rem;
 	height: 39.25rem;
 
 }
@@ -399,7 +399,7 @@ order: 1;
 	}
 
 .profiles_block_title{
-	min-width: 500px;
+	width: 500px;
 }
 
 
