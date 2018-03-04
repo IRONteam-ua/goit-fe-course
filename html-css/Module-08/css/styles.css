@@ -135,7 +135,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 
 
 .profiles_block{
-	width: 320px;
+	min-width: 320px;
 	display: block;
 	text-align: center;
 	margin: 0 auto;
@@ -143,7 +143,7 @@ background:  #000 url('../img/background_mobile.png') no-repeat;
 
 .profiles_block_title{
 	display: inline-block;		
-	width: 90%;
+	max-width: 90%;
 	margin: 0 auto;
 	color: #333;
 	font-family: "Montserrat-Bold";
@@ -310,7 +310,7 @@ margin: 5px auto 17px;
 .profile_wrap{
 	display: flex;
 	flex-wrap: wrap;
-	width: 35.625rem;
+	min-width: 35.625rem;
 	height: 39.25rem;
 
 }
