@@ -8,7 +8,10 @@ html {font-size: 14px;}
 /* 320 */
 
 .container{
-	margin: 0 auto;
+	max-width: 940px;
+	margin: 0 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 header{ 	/* header */
@@ -257,7 +260,7 @@ margin: 5px auto 17px;
 
 	header{ 	/* header */
 		min-width: 768px;
-		min-height: 700px;
+		height: 700px;
 		margin: 0 auto; 
 		background:  #000 url('../img/background_tablet.png') no-repeat;  
 		/* background-size: cover; */
@@ -309,7 +312,7 @@ margin: 5px auto 17px;
 .profile_wrap{
 	display: flex;
 	flex-wrap: wrap;
-	min-width: 35.625rem;
+	width: 35.625rem;
 	max-height: 39.25rem;
 
 }
@@ -320,25 +323,8 @@ margin: 5px auto 17px;
 
 }  
 
- .profile_wrap > #id1{
-flex: 1;
-order: 1;	
-}
-
-.profile_wrap > #id2{
-	flex: 2;
-	order: 3;
-	}
-	.profile_wrap > #id3{
-		flex: 3;
-	order: 2;
-	}
-	.profile_wrap > #id4{
-		flex: 4;
-		order: 4;
-		}
-		.person_title{
-			overflow: hidden;
+	.person_title{
+		overflow: hidden;
 			width: 180px;
 			
 			}
@@ -366,6 +352,10 @@ order: 1;
 }
 /*1440*/
 @media screen and (min-width: 1440px) {
+
+	.container{
+		min-width: 940px;
+	}
 
 	header{ 	/* header */
 		min-width: 1440px;
