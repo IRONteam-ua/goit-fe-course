@@ -271,7 +271,7 @@ margin: 5px auto 17px;
 	.header_naw_wrap{
 		display: flex;
 		justify-content: space-between;
-		min-width: 90%;
+		max-width: 90%;
 		padding: 3rem;
 	}
 	
@@ -343,7 +343,7 @@ margin: 5px auto 17px;
 	}
     .header_wrap{
         margin:0 auto;
-		min-width: 768px;
+		width: 768px;
         text-align: center;
     }
    
@@ -353,9 +353,7 @@ margin: 5px auto 17px;
 /*1440*/
 @media screen and (min-width: 1440px) {
 
-	.container{
-		min-width: 940px;
-	}
+
 
 	header{ 	/* header */
 		min-width: 1440px;
@@ -368,8 +366,8 @@ margin: 5px auto 17px;
 
 
 	.header_naw_wrap{
-		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
+		min-width: 70rem;
 	}
 	
     .header_info_title{
