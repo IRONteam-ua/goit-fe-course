@@ -240,21 +240,69 @@ margin: 5px auto 17px;
 }
 
 /* /320 */
-/*321-767*/
-@media screen and (min-width: 321px) and (max-width: 767px){
+/*321-479*/
+@media screen and (min-width: 321px) and (max-width: 479px){
 	header{
-		background:  #000 url('../img/background_tablet.png') center no-repeat; 
+		min-width: 321px;
+		min-height: 540px;
+		margin: 0 auto; 
+		background:  #000 url('background_mobile') center no-repeat; 
 	
 	}
     .header_wrap{
         margin:0 auto;
-		width: 320px;
+		min-width: 320px;
         text-align: center;
     }
    
 
 }
-/*321-767*/
+/*321-479*/
+/*480-767*/
+@media screen and (min-width: 480px) and (max-width: 767px){
+	header{
+		min-width: 480px;
+		min-height: 540px;
+		margin: 0 auto; 
+		background:  #000 url('../img/background_tablet.png') no-repeat;  
+	
+	}
+	.header_naw_wrap{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 2rem;
+	}
+	
+    .header_naw {
+		order: 1;
+    }
+	.company_name{
+		order: -1;
+
+    }
+
+    .header_info_text{
+        clear:both;
+        margin-top:30px;
+	}
+	
+	.profile_wrap{
+		width: 70%;
+	}
+
+    .person{
+        display: inline-block;
+        width:50%;
+		margin-left:-4px;
+		vertical-align: top;
+    }
+   
+
+
+}
+/*/480-767*/
+
 /*768*/
 @media screen and (min-width: 768px) {
 
@@ -335,24 +383,57 @@ margin: 5px auto 17px;
 			} 
 }
 /*/768*/
-/*769-1439*/
-@media screen and (min-width: 769px) and (max-width: 1439px){
+/*769-1335*/
+@media screen and (min-width: 769px) and (max-width: 1335px){
 	header{
+		min-width: 769px;
+		min-height: auto;
+		background:  #000 url('../img/background.png') center no-repeat; 
+	
+	}
+	.header_naw_wrap{
+		width: 100%;
+		padding: 3rem;
+	}
+    .header_wrap{
+        margin:0 auto;
+        text-align: center;
+    }
+
+ 
+}
+/*/769-1335*/
+/*1336-1439*/
+@media screen and (min-width: 1336px) and (max-width: 1439px){
+	header{
+		min-width: 1336px;
+		min-height: 700px;
 		background:  #000 url('../img/background.png') center no-repeat; 
 	
 	}
     .header_wrap{
         margin:0 auto;
-		width: 768px;
-        text-align: center;
+		width: auto;
+		text-align: center;
+		justify-content: space-between;
+		min-width: 70rem;
     }
    
+	.profile_wrap{
+		display: flex;
+		flex-direction: row;
+		width: 65rem;
 
 
 }
+.person{
+	min-width: 25%;
+	padding-bottom: 3.125rem;
+}  
+}
+/*/1336-1439*/
 /*1440*/
 @media screen and (min-width: 1440px) {
-
 
 
 	header{ 	/* header */
@@ -394,27 +475,19 @@ margin: 5px auto 17px;
     display: flex;
 	flex-direction: row;
 	width: 65rem;
-
-
-
 }
 
   .person{
 	min-width: 25%;
 	padding-bottom: 3.125rem;
-
-
 }  
 
 		.person_title{
 			width: 185px;
 			font-size: 1rem;
-			
 			}
 			.main_button_link{
 				width: 190px;
 				font-size: 1rem;
-				
 			} 
-
 }
