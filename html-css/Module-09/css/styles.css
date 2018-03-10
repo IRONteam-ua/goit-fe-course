@@ -1,0 +1,394 @@
+@import "fonts.css"; 
+ * {
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+	 font-size: 14px;
+ }
+ 
+ /* 320 */
+
+ header{ 	/* header */
+	min-width: 320px;
+	height: 540px;
+	margin: 0 auto; 
+	background:  #000 url('../img/background_mobile.png') no-repeat;  
+	/* background-size: cover; */
+	
+	}
+ 
+ .container{
+	 max-width: 940px;
+	 margin: 0 15px;
+	 margin-right: auto;
+	 margin-left: auto;
+ }
+ 
+ 
+ .header_wrap{
+	 margin:0 auto;
+	 text-align: center;
+ }
+ 
+ 
+ .header_naw_wrap{
+	 height: 40.74%;
+	 padding-top: 1.786rem;
+	 
+ }
+ 
+ .header_naw > li {
+	 display: inline-block;
+	 list-style: none;
+	 margin-bottom: 32%;
+	 width: 100px;
+	 margin-left: -20px;
+	 }
+ 
+	   .header_naw_link {
+		 display: inline-block;
+		 height: 34px;
+		 width: 80px;
+		 text-decoration: none;
+		 color: white;
+		 line-height: 2rem;
+		 text-align: center;
+		 font-family: 'Montserrat-bold';
+		 font-size: 1rem;
+		 border: 2px solid rgba(255, 255, 255, 0);
+		 border-radius: 20px; 
+	 }
+	 .header_naw_link:hover {
+		   border-color: white;
+		   transition: 0.2s;
+		 }
+	 
+		 .company_name {
+			 line-height: 1.389rem;
+ 
+		   }
+	   
+		   .company_name_link {
+			   text-decoration: none;
+			   color: white;
+			   margin: 0 auto;
+			   font-family: 'Montserrat-bold';
+			   letter-spacing: 1px;
+			   font-size: 1.429rem; 
+		   }
+ 
+		 .header_info_text{
+			 display: block;
+			 margin: 0 auto;
+			 text-align: center;
+			  
+		 } 
+ 
+ 
+	 .header_info_title{
+	 display: block;
+	 max-width: 290px;
+	 margin: 0 auto;
+	 color: white;
+	 font-family: 'Montserrat-bold';
+	 font-size: 2.143rem;
+	 text-transform: uppercase;
+	 text-align: center;
+	 padding-top:  2.143rem;
+ 
+ }
+ 
+	 .header_info_subtitle {
+	 display: block;
+	 max-width: 82%;
+	 color: white;
+	 font-family: 'Roboto-Thin';
+	 font-size: 1.286rem;
+	 padding-top: 1.429rem;
+	 padding-bottom: 4%;
+	 letter-spacing: 1px;
+	 text-align: center;
+	 margin: 0 auto;
+ 
+ 
+ }
+ 
+ .header_info_button_link {
+	 display: block;
+	 margin: 0 auto;
+	 width: 280px;
+	 height: 40px;
+	 background-color: #ff4e50;
+	 border-radius: 20px;
+	 color: white;
+	 font-family: 'Montserrat';
+	 font-size: 1rem;
+	 font-weight: 700;
+	 text-decoration: none;
+	 text-align: center;
+	 line-height: 2.657rem; 
+ }
+ 
+ .header_info_button_link:hover {
+	   color: #ff4e50;
+	   background-color: white;
+	   transition: 0.2s; 
+ }
+ 
+ /* main */
+ 
+ 
+ .profiles_block{
+	 min-width: 320px;
+	 display: block;
+	 text-align: center;
+	 margin: 0 auto;
+ }
+ 
+ .profiles_block_title{
+	 display: inline-block;		
+	 max-width: 90%;
+	 margin: 0 auto;
+	 color: #333;
+	 font-family: "Montserrat-Bold";
+	 font-size: 1.5rem;
+	 font-weight: 700;
+	 text-align: center; 
+	 padding-top: 5rem;
+ }
+ 
+ .profile_wrap{
+ margin: 0 auto;
+ text-align: center;
+ }
+ 
+ .person{
+	 padding-top: 1.429rem;
+	 display: block;
+	 margin: 0 auto;
+	 text-align: center;
+ }
+ .person_avatar{
+	 display: inline-block;
+	 position: relative;
+	 width: 170px;
+	 margin: auto;
+	 text-align: center;
+	 text-decoration: none;
+ 
+ }
+ .person_photo{
+ width: 121px;
+ height: 121px;
+ border-radius: 50%;
+ margin: 5px auto 17px;
+ }
+ 
+ .person_icon{
+	 position: absolute;
+	 bottom: 15px;
+	 right: 20px;
+	 z-index: 100;
+ 
+	 
+ }
+ 
+ .person_name{
+	 margin: 0 auto;
+	 color: #333;
+	 font-family: 'Montserrat-Bold';
+	 font-size: 0.9286rem;
+	 font-weight: 700;
+	 text-align: center; 
+	 padding-bottom: 1.286rem;
+ }
+ 
+ .person_title{
+	 width: 60%;
+	 margin: 0 auto;
+	 color: #666;
+	 font-family: 'Roboto-Thin';
+	 font-size: 0.9286rem;
+	 text-align: center;
+ }
+ 
+ .main_button{
+	 padding-top: 30px;
+	 padding-bottom: 57px;
+ 
+ }
+ 
+ .main_button_link {
+	 display: block;
+	 width: 280px;
+	 height: 40px;
+	 background-color: #fff;
+	 border: 2px solid #ff4e50;
+	 border-radius: 20px;
+	 color: #ff4e50;
+	 font-family: Montserrat;
+	 font-size:  1.286rem;
+	 font-weight: 700;
+	 text-decoration: none;
+	 text-align: center;
+	 margin: 0 auto;
+	 line-height: 33px; 
+ }
+ 
+ .main_button_link:hover {
+	   color: #fff;
+	   background-color: #ff4e50;
+	   transition: 0.2s; 
+ }
+ 
+/* /320 */
+/*321-767*/
+@media screen and (min-width: 321px) and (max-width: 767px){
+	header{
+		background:  #000 url('../img/background_tablet.png') center no-repeat; 
+	
+	}
+    .header_wrap{
+        margin:0 auto;
+        text-align: center;
+    }
+   
+
+}
+/*321-767*/
+/*768*/
+@media screen and (min-width: 768px) {
+
+	header{ 	/* header */
+		background:  #000 url('../img/background_tablet.png') no-repeat;  
+		/* background-size: cover; */
+	}	
+	
+
+
+	.header_naw_wrap{
+		flex-direction: row-reverse;
+		min-width: 90%;
+		padding: 3rem;
+	}
+
+
+    .header_info_title{
+		font-size: 3.643rem;
+		min-width: 600px;
+		padding-top: 2.857rem;
+	}
+	
+	.header_info_subtitle{
+		font-size: 1.643rem;
+		padding-top:  1.786rem;
+		width: 600px;
+	}
+
+	.header_info_button{
+		padding-top: 0.7143rem;
+	}
+
+	.header_info_button_link{
+	width: 240px;
+	font-size: 0.9286rem;
+	}
+
+.profiles_block_title{
+	width: 500px;
+}
+
+
+.profile_wrap{
+	min-width: 35.625rem;
+	max-height: 39.25rem;
+
+}
+
+  .person{
+	min-width: 50%;
+	padding-bottom: 3.125rem;
+
+}  
+
+		.person_title{
+			overflow: hidden;
+			width: 180px;
+			
+			}
+			.main_button_link{
+				width: 188px;
+				font-size: 0.9286rem;
+				
+			} 
+}
+/*/768*/
+/*769-1439*/
+@media screen and (min-width: 769px) and (max-width: 1439px){
+	header{
+		min-width: 769px;
+		min-height: 700px;
+		margin: 0 auto; 
+		background:  #000 url('../img/background.png') center no-repeat; 
+	
+	}
+    .header_wrap{
+        margin:0 auto;
+		text-align: center;
+		min-height: auto;
+	}
+	
+
+
+
+}
+/*1440*/
+@media screen and (min-width: 1440px) {
+
+	header{ 	/* header */
+		min-width: 1440px;
+		min-height: 700px;
+		margin: 0 auto; 
+		background:  #000 url('../img/background.png') no-repeat;  
+		background-size: cover;
+	}	
+	
+
+
+	.header_naw_wrap{
+		min-width: 70rem;
+	}
+	
+    .header_info_title{
+		font-size: 3.714rem;
+	}
+	
+	.header_info_subtitle{
+		font-size:  1.714rem;
+	}
+
+
+	.header_info_button_link{
+	width: 240px;
+	font-size: 0.9286rem;
+	}
+
+.profiles_block_title{
+	width: 500px;
+}
+
+
+
+
+  .person{
+	min-width: 25%;
+	padding-bottom: 3.125rem;
+}  
+
+		.person_title{
+			font-size: 1rem;
+			}
+			.main_button_link{
+				font-size: 1rem;
+			} 
+}
