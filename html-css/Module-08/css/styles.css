@@ -206,7 +206,7 @@ header{ 	/* header */
 	}
 	
 	.person_title{
-		width: 60%;
+		width: 215px;
 		margin: 0 auto;
 		color: #666;
 		font-family: 'Roboto-Thin';
@@ -325,7 +325,7 @@ header{ 	/* header */
 }
 
   .person{
-	min-width: 50%;
+	min-width: 236px;
 	padding-bottom: 3.125rem;
 
 }  
