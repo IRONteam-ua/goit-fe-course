@@ -32,7 +32,7 @@ header{ 	/* header */
 	
 	
 	.header_naw_wrap{
-		height: 150px;
+		height: 40.74%;
 		padding-top: 1.786rem;
 		
 	}
@@ -40,7 +40,7 @@ header{ 	/* header */
 	#header_naw > li {
 		display: inline-block;
 		list-style: none;
-		margin-bottom: 100px;
+		margin-bottom: 32%;
 		width: 100px;
 		margin-left: -20px;
 		}
@@ -100,7 +100,7 @@ header{ 	/* header */
 	
 		.header_info_subtitle {
 		display: block;
-		max-width: 405px;
+		max-width: 82%;
 		color: white;
 		font-family: 'Roboto-Thin';
 		font-size: 1.286rem;
@@ -206,7 +206,7 @@ header{ 	/* header */
 	}
 	
 	.person_title{
-		width: 492px;
+		width: 60%;
 		margin: 0 auto;
 		color: #666;
 		font-family: 'Roboto-Thin';
