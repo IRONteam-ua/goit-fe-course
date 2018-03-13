@@ -6,8 +6,8 @@
 }
 
 .container{
-	max-width: 920px;
-	margin: 0 20px;
+	max-width: 940px;
+	margin: 0 auto;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -255,7 +255,7 @@ header{ 	/* header */
 	}
     .header_wrap{
         margin:0 auto;
-		min-width: 321px;
+		min-width: 32px;
         text-align: center;
     }
    
@@ -325,7 +325,7 @@ header{ 	/* header */
 }
 
   .person{
-	min-width: 235px;
+	min-width: 50%;
 	padding-bottom: 3.125rem;
 
 }  
@@ -388,7 +388,7 @@ header{ 	/* header */
 
 }
 .person{
-	min-width: 220px;
+	min-width: 25%;
 	padding-bottom: 3.125rem;
 }  
 }
@@ -439,7 +439,7 @@ header{ 	/* header */
 }
 
   .person{
-	min-width: 220px;
+	min-width: 25%;
 	padding-bottom: 3.125rem;
 }  
 
