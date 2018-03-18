@@ -21,7 +21,7 @@
 body header {
 	width: 100%;
 	height: 1000px;
-	background-image: url('../img/Layer-15.png');
+	background-image: url('../img/Layer-15-min.png');
 	background-size: cover; }
 
 	@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
