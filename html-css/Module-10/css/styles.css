@@ -19,14 +19,14 @@
 
 /* HEADER */
 body header {
-	min-width: 100%;
+	width: 100%;
 	height: 1000px;
-	background-image: url('../img/layer-15.png');
+	background-image: url('../img/Layer-15.png');
 	background-size: cover; }
 
 	@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
 		body header {
-		  background: url('../img/retina/Layer-15@2x.png') no-repeat;
+		  background: url('../img/retina/Layer-15.png@2x.png') no-repeat;
 		}
 	  }
 
