@@ -500,12 +500,12 @@ display: flex;
 		margin: 14px; }
 
 
-
 /* FOOTER */
 footer {
 	width: 1200px;
 	border-top: 1px solid #e5e5e5;
 	margin: 10px auto; }
+
 .footer_wrap{
 display: -webkit-inline-box;
 display: -ms-inline-flexbox;
@@ -531,7 +531,8 @@ font-weight: 400;
 padding-top: 27px;
 -webkit-box-flex: 1;
     -ms-flex-positive: 1;
-        flex-grow: 1;
+		flex-grow: 1;
+		text-decoration: none;
  }
 
 .footer_link{
