@@ -46,8 +46,7 @@ body header .container	.nav_wrap .logo_link{
 			font-family: 'montserrat-bold';
 			font-size: 30px;
 			font-weight: 700;
-			/* Text style for "M, G" */
-			text-transform: uppercase;			}
+			/* Text style for "M, G" */		}
 
 body header .container	.nav_wrap .logo_link:hover{
 				color: #fce38a;		}
@@ -149,9 +148,9 @@ body header .header_container   .header_title {
 			width: 802px;
 			height: 248px;
 			color: #ffffff;
-			font-family: montserrat-bold;
+			font-family: montserrat-bold, regular;
 			font-size: 150px;
-			font-weight: 800;
+			font-weight: 700;
 			line-height: 140px;
 			text-transform: uppercase;
 			text-align: center;
@@ -242,7 +241,7 @@ body main .container .section-text{
 	}   
 	
 	.section-title{
-		font-family: 'montserrat-bold';
+		font-family: 'montserrat';
 		color: #333333;
 		font-size: 30px;
 		font-weight: 900;
@@ -274,7 +273,7 @@ body main .container .article-portfolio{
     font-family: 'montserrat-bold';
     color: #333333;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
