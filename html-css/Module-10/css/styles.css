@@ -22,6 +22,7 @@ body header {
 	width: 100%;
 	height: 1000px;
 	background-image: url('../img/Layer-15-min.png');
+	background-position: center;
 	background-size: cover; }
 
 body header .container	.nav_wrap{	
@@ -42,7 +43,7 @@ body header .container	.nav_wrap .logo_link{
 			width: 86px;
 			height: 23px;
 			color: #ffffff;
-			font-family: montserrat;
+			font-family: 'montserrat-bold';
 			font-size: 30px;
 			font-weight: 700;
 			/* Text style for "M, G" */
@@ -148,9 +149,9 @@ body header .header_container   .header_title {
 			width: 802px;
 			height: 248px;
 			color: #ffffff;
-			font-family: montserrat;
+			font-family: montserrat-bold;
 			font-size: 150px;
-			font-weight: 700;
+			font-weight: 800;
 			line-height: 140px;
 			text-transform: uppercase;
 			text-align: center;
@@ -241,7 +242,7 @@ body main .container .section-text{
 	}   
 	
 	.section-title{
-		font-family: 'montserrat';
+		font-family: 'montserrat-bold';
 		color: #333333;
 		font-size: 30px;
 		font-weight: 900;
@@ -270,7 +271,7 @@ body main .container .article-portfolio{
 				margin: 0 auto;}			
 
 .article-item-title{
-    font-family: 'montserrat';
+    font-family: 'montserrat-bold';
     color: #333333;
     font-size: 14px;
     font-weight: 600;
@@ -467,7 +468,7 @@ display: flex;
 .social-icon-link {
 	  display: inline-block;
 	  margin: 0 -1.5px;
-	  width: 55px;
+	  width: 57px;
 	  height: 55px;
 	  background-color: #fce38a; 
 	  fill:#f38181;
