@@ -441,6 +441,18 @@ display: flex;
 	z-index: 1;
 }
 
+.social_icon_item{
+	margin: 2px;
+	height: 55px;
+	width: 55px;
+	background-color: #fce38a;	
+}
+
+.social_icon_item:hover{
+	background-color: #95e1d3;
+}
+
+
 .social-icon-item{
 	margin: 1px;
 	height: 56px;
