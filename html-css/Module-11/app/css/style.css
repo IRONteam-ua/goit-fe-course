@@ -398,21 +398,9 @@ body main .container .profile-portfolio .about-profile figure .profile-item .sla
   margin: 1px;
   height: 55px;
   width: 55px;
-  background-color: #fce38a;
 }
 
 body main .container .profile-portfolio .about-profile figure .profile-item .slasher .social-icon-block .social-icon-item:hover {
-  background-color: #95e1d3;
-}
-
-body main .container .profile-portfolio .about-profile figure .profile-item .slasher .social-icon-block .social_icon_item {
-  margin: 1px;
-  height: 55px;
-  width: 55px;
-  background-color: #fce38a;
-}
-
-body main .container .profile-portfolio .about-profile figure .profile-item .slasher .social-icon-block .social_icon_item:hover {
   background-color: #95e1d3;
 }
 
@@ -420,7 +408,7 @@ body main .container .profile-portfolio .about-profile figure .profile-item .sla
   display: inline-block;
   margin: 0 -1.5px;
   width: 56px;
-  height: 56px;
+  height: 58px;
   background-color: #fce38a;
   fill: #f38181;
 }
