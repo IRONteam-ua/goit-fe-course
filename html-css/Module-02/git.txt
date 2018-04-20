@@ -1,0 +1,13 @@
+$ mkdir module-02-task-repo
+$ cd module-02-task-repo
+$ git init
+$ git status
+$ git add .
+$ git commit -m ""
+$ git diff
+$ git push https://github.com/Ironbevz/goit-fe-course.git
+$ git log
+$ git pull
+$ git checkout -b ""
+Switched to a new branch 'article'
+$ git checkout master
