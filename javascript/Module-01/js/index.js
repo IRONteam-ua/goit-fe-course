@@ -76,7 +76,7 @@ if(isValidInput === true){
             if(userChoise === true){
               alert( 'Приятного путешествия в группе \'hurgada\'');
                // уменьшаем число свободных мест на число участников группы
-              taba = hurgada - userMembers;
+               hurgada = hurgada - userMembers;
             }
               if(userChoise === false){
                 alert( 'Нам очень жаль, приходите еще!')
@@ -88,7 +88,7 @@ if(isValidInput === true){
                 if(userChoise === true){
                   alert( 'Приятного путешествия в группе \'sharm\'');
                    // уменьшаем число свободных мест на число участников группы
-                  taba = sharm - userMembers;
+                   sharm = sharm - userMembers;
                 }
                 if(userChoise === false){
                   alert( 'Нам очень жаль, приходите еще!')
