@@ -18,93 +18,125 @@
 6. Если ответ нет, выводим alert с текстом "Нам очень жаль, приходите еще!".
 7. Если мест нигде нет, выводим alert с сообщением 'Извините, мест нет.'
 */
-
-
 /****Задание повышеной сложности, выполнять по желанию***
-
 Если была найдена группа в которой количество мест больше либо равно необходимому, 
 вывести пользователю сообщение через confirm, что есть место в группе такой-то, 
 согласен ли пользоваетель быть в этой группе?
-
 Если ответ да, уменьшаем число свободных мест на число участников группы и выводим alert с текстом,
 'Приятного путешествия в группе <имя группы>'.
-
 Если ответ нет, проверяем дальше и предлагаем следующую группу со свободными местами, 
 если таковая будет найдена. Проверяем до тех пор, пока не проверим все 3 воможные группы.
-
 Если мест нигде нет, выводим alert с сообщением 'Извините, мест нет.'  */
 
 
 // создаем группы и количество мест
 
+let sharm = 15;
+let hurgada = 25;
 let taba = 6;
-let hurgada = 15;
-let sharm = 25;
+let userGroupSelection;
 
 // Пользователь вводит число необходимых мест;
-const userInput =  prompt('Введите число необходимых мест:', );
-const userMembers = Number(userInput);
+
+let userInput = prompt('Введите количество мест:', '');
 
 // проверям  является ли введенные данные целым положительным числом;
 
-const isValidInput = userMembers !== null && !Number.isNaN(userMembers);
+const isValidInput = userInput !== null && !Number.isNaN(userInput);
+const userEnterNumbers = Number(userInput);
 console.log (isValidInput);
 
-let userChoise;
-let groupMembers;
-
+// в случае ошибочного ввода прекратить выполнение скрипта
 if(isValidInput === true){
-  // В случае валидного ввода, последовательно проверить кол-во мест в группах
+  if(userEnterNumbers<=0){
+      alert("Ошибка ввода!");
+  }
+    // В случае валидного ввода, последовательно проверить кол-во мест в группах
   // Если была найдена группа в которой количество мест больше либо равно необходимому,
-
-    if(userMembers <= taba){
-    //  Выводим сообщение пользователю что есть место в группе
-      userChoise = confirm('Есть места в группе \'taba\'. Вы согласны быть в группе?'); 
-        if(userChoise === true){
+  else
+    if(userEnterNumbers<=taba){
+      userGroupSelection = confirm('Вы согласны быть в группе \'taba\' ?');
+      // Если ответ нет, выводим alert с текстом "Нам очень жаль, приходите еще!".
+      if (userGroupSelection === false){
+        alert( 'Нам очень жаль, приходите еще!')
+      }
+      // Если ответ да, уменьшаем число свободных мест на число участников группы
+        if(userGroupSelection === true){
           alert( 'Приятного путешествия в группе \'taba\'');
-          // уменьшаем число свободных мест на число участников группы
-          taba = taba - userMembers;
+            taba-=userEnterNumbers;
+            
         }
-         if(userChoise === false){
-              alert( 'Нам очень жаль, приходите еще!')
+        else{
+          userGroupSelection = confirm('Вы согласны быть в группе \'sharm\' ?');
+                // Если ответ нет, выводим alert с текстом "Нам очень жаль, приходите еще!".
+          if (userGroupSelection === false){
+            alert( 'Нам очень жаль, приходите еще!')
+          }
+                // Если ответ да, уменьшаем число свободных мест на число участников группы
+            if(userGroupSelection === true){
+              alert( 'Приятного путешествия в группе \'sharm\'');
+              sharm-=userEnterNumbers;
             }
-        }
-
-        if(userMembers<=hurgada){
-              //  Выводим сообщение пользователю что есть место в группе
-          userChoise = confirm('Есть места в группе \'hurgada\'. Вы согласны быть в группе?');
-            if(userChoise === true){
-              alert( 'Приятного путешествия в группе \'hurgada\'');
-               // уменьшаем число свободных мест на число участников группы
-               hurgada = hurgada - userMembers;
-            }
-              if(userChoise === false){
+            else{
+              userGroupSelection = confirm('Вы согласны быть в группе \'hurgada\' ?');
+                    // Если ответ нет, выводим alert с текстом "Нам очень жаль, приходите еще!".
+              if (userGroupSelection === false){
                 alert( 'Нам очень жаль, приходите еще!')
               }
-          }
-            if(userMembers<=sharm){
-                  //  Выводим сообщение пользователю что есть место в группе
-              userChoise = confirm('Есть места в группе \'sharm\'. Вы согласны быть в группе?');
-                if(userChoise === true){
-                  alert( 'Приятного путешествия в группе \'sharm\'');
-                   // уменьшаем число свободных мест на число участников группы
-                   sharm = sharm - userMembers;
-                }
-                if(userChoise === false){
-                  alert( 'Нам очень жаль, приходите еще!')
-                }
-            }
-                else{
-                  // Если мест нигде нет
+                    // Если ответ да, уменьшаем число свободных мест на число участников группы
+               if(userGroupSelection === true){
+                alert( 'Приятного путешествия в группе \'hurgada\'');
+                hurgada-=userEnterNumbers;
+               }
+               else
                 alert('Извините, мест нет.');  
-              }}
-              
-              else {
-                alert("Ошибка ввода!");
             }
-          
-    
-            console.log(`Sharm - ${sharm}`);
-            console.log(`Taba - ${taba}`);
-            console.log(`Hurgada - ${hurgada}`);
+        }
+    }
+    else if(userEnterNumbers<=sharm){
+      userGroupSelection = confirm('Вы согласны быть в группе \'sharm\' ?');
+            // Если ответ нет, выводим alert с текстом "Нам очень жаль, приходите еще!".
+      if (userGroupSelection === false){
+        alert( 'Нам очень жаль, приходите еще!')
+      }
+            // Если ответ да, уменьшаем число свободных мест на число участников группы
+        if(userGroupSelection === true){
+          alert( 'Приятного путешествия в группе \'sharm\'');
+          sharm-=userEnterNumbers;
+        }
+        else{
+          userGroupSelection = confirm('Вы согласны быть в группе \'hurgada\' ?');
+                // Если ответ нет, выводим alert с текстом "Нам очень жаль, приходите еще!".
+          if (userGroupSelection === false){
+            alert( 'Нам очень жаль, приходите еще!')
+          }
+                // Если ответ да, уменьшаем число свободных мест на число участников группы
+        if(userGroupSelection === true){
+          alert( 'Приятного путешествия в группе \'hurgada\'');
+          hurgada-=userEnterNumbers;
+        }
+        else{
+            alert('Извините, мест нет.');
+        }
+    }
+    }
+    else if(userEnterNumbers<=hurgada){
+      userGroupSelection = confirm('Вы согласны быть в группе \'hurgada\' ?');
+            // Если ответ нет, выводим alert с текстом "Нам очень жаль, приходите еще!".
+      if (userGroupSelection === false){
+        alert( 'Нам очень жаль, приходите еще!')
+      }
+            // Если ответ да, уменьшаем число свободных мест на число участников группы
+        if(userGroupSelection === true){
+          alert( 'Приятного путешествия в группе \'hurgada\'');
+          hurgada-=userEnterNumbers;
+        }
+        else
+          alert('Извините, мест нет.');
+    } 
+  }
+
+console.log(`Sharm - ${sharm}`);
+console.log(`Taba - ${taba}`);
+console.log(`Hurgada - ${hurgada}`);
 
