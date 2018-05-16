@@ -11,17 +11,17 @@
 циклом в формате ключ: значение
 */
 
-// const user = {
-//   name: "Mango",
-//   age: 20,
-//   hobby: "html",
-//   premium: true
-// };
+const user = {
+  name: "Mango",
+  age: 20,
+  hobby: "html",
+  premium: true
+};
 
-// user.mood = "happy";
-// user.hobby = "javascript";
-// delete user.premium;
-// console.log(user);
+user.mood = "happy";
+user.hobby = "javascript";
+delete user.premium;
+console.log(user);
 
 // ======================tassk 2 =================
 
@@ -33,26 +33,26 @@
 Возвращает true если объект пустой, false если не пустой.
 */
 
-// function isObjectEmpty(obj) {
+function isObjectEmpty(obj) {
 
-//   for (let key in obj) {
+  for (let key in obj) {
 
-//     return false;
-//   }
-//   return true;
-// }
+    return false;
+  }
+  return true;
+}
 
 
-// // Вызовы функции для проверки
-// console.log(
-//   isObjectEmpty({})
-// ); // true
+// Вызовы функции для проверки
+console.log(
+  isObjectEmpty({})
+); // true
 
-// console.log(
-//   isObjectEmpty({
-//     a: 1
-//   })
-// ); // false
+console.log(
+  isObjectEmpty({
+    a: 1
+  })
+); // false
 
 // ======================tassk 3 =================
 
@@ -64,262 +64,264 @@
 
 // function countOwnProps(obj) {
 
-//   let objProperty = 0;
+let objProperty = 0;
 
-//   for (let key in obj) {
+for (let key in obj) {
 
-//     objProperty += 1;
+  objProperty += 1;
 
-//     if (objProperty < key) {
+  if (objProperty < key) {
 
-//       console.log(objProperty);
-//       return objProperty;
-//     }
-//   }
+    console.log(objProperty);
+    return objProperty;
+  }
+}
 
-//   return objProperty;
+return objProperty;
 
-// }
+}
 
-// // Вызовы функции для проверки
-// console.log(
-//   countOwnProps({})
-// ); // 0
+// Вызовы функции для проверки
+console.log(
+  countOwnProps({})
+); // 0
 
-// console.log(
-//   countOwnProps({
-//     a: 1,
-//     b: 3,
-//     c: 'hello'
-//   })
-// ); // 3
+console.log(
+    countOwnProps({
+      a: 1,
+      b: 3,
+      c: 'hello'
+    })
+    // ); // 3
 
-// ======================tassk 4 =================
+    // ======================tassk 4 =================
 
-/*  
-Напишите функцию countTotalSalary(salaries),
-считающую общую сумму запрплаты работников.
+    /*  
+    Напишите функцию countTotalSalary(salaries),
+    считающую общую сумму запрплаты работников.
 
-Каждое поле объекта передаваемого в функцию, 
-имеет вид "имя":"зарплата"
+    Каждое поле объекта передаваемого в функцию, 
+    имеет вид "имя":"зарплата"
 
-Функция возвращает общую сумму зарплаты.
-*/
+    Функция возвращает общую сумму зарплаты.
+    */
 
-// function countTotalSalary(salaries) {
+    function countTotalSalary(salaries) {
 
-//   let countSalary = 0;
+      let countSalary = 0;
 
-//   for (let key in salaries) {
+      for (let key in salaries) {
 
-//     countSalary += salaries[key];
+        countSalary += salaries[key];
 
-//     if (countSalary < salaries[key])
+        if (countSalary < salaries[key])
 
-//       return countSalary;
-//   }
-//   return countSalary;
+          return countSalary;
+      }
+      return countSalary;
 
-// }
+    }
 
-// // Вызовы функции для проверки
-// console.log(
-//   countTotalSalary({})
-// ); // 0
+    // Вызовы функции для проверки
+    console.log(
+      countTotalSalary({})
+    ); // 0
 
-// console.log(
-//   countTotalSalary({
-//     mango: 100,
-//     poly: 150,
-//     alfred: 80
-//   })
-// ); // 330
+    console.log(
+      countTotalSalary({
+        mango: 100,
+        poly: 150,
+        alfred: 80
+      })
+    ); // 330
 
-// ======================tassk 5 =================
+    // ======================tassk 5 =================
 
-/*  
-Напишите функцию getAllPropValues(prop), 
-которая берет массив объектов и 
-возвращает массив значений определенного поля prop
-*/
+    /*  
+    Напишите функцию getAllPropValues(prop), 
+    которая берет массив объектов и 
+    возвращает массив значений определенного поля prop
+    */
 
-// const users = [{
-//     name: 'Poly',
-//     age: 7,
-//     mood: 'happy'
-//   },
-//   {
-//     name: 'Mango',
-//     age: 4,
-//     mood: 'blissful'
-//   },
-//   {
-//     name: 'Ajax',
-//     age: 3,
-//     mood: 'tired'
-//   }
-// ];
+    const users = [{
+        name: 'Poly',
+        age: 7,
+        mood: 'happy'
+      },
+      {
+        name: 'Mango',
+        age: 4,
+        mood: 'blissful'
+      },
+      {
+        name: 'Ajax',
+        age: 3,
+        mood: 'tired'
+      }
+    ];
 
-// function getAllPropValues(prop) {
+    function getAllPropValues(prop) {
 
-//   let newArr = [];
+      let newArr = [];
 
-//   for (let item of users) {
+      for (let item of users) {
 
-//     newArr.push(item[prop]);
+        newArr.push(item[prop]);
 
-//   }
+      }
 
-//   return newArr;
+      return newArr;
 
-// }
+    }
 
 
 
-// // Вызовы функции для проверки
-// console.log(
-//   getAllPropValues('name')
-// ); // ['Poly', 'Mango', 'Ajax']
+    // Вызовы функции для проверки
+    console.log(
+      getAllPropValues('name')
+    ); // ['Poly', 'Mango', 'Ajax']
 
-// console.log(
-//   getAllPropValues('mood')
-// ); // ['happy', 'blissful', 'tired']
+    console.log(
+      getAllPropValues('mood')
+    ); // ['happy', 'blissful', 'tired']
 
-// console.log(
-//   getAllPropValues('active')
-// ); // []
+    console.log(
+      getAllPropValues('active')
+    ); // []
 
-// ======================tassk 6 =================
+    // ======================tassk 6 =================
 
-/*  
-Напишите код, который бы  с помощью 
-функции-конструкора User, позволял создавать 
-объекты пользователя со следующим свойствами:
-- name - строка (имя)
-- isActive - буль (активен)
-- age - число (возраст)
-- friends - число (кол-во друзей)
+    /*  
+    Напишите код, который бы  с помощью 
+    функции-конструкора User, позволял создавать 
+    объекты пользователя со следующим свойствами:
+    - name - строка (имя)
+    - isActive - буль (активен)
+    - age - число (возраст)
+    - friends - число (кол-во друзей)
 
-Имя, активность, возраст и друзей, 
-необходимо передать как аргументы 
-при вызове конструктора.
+    Имя, активность, возраст и друзей, 
+    необходимо передать как аргументы 
+    при вызове конструктора.
 
-Добавить метод getUserInfo(), которая, выводит строку:
-`User ${имя} is ${возраст} years old and has ${кол-во друщзей} friends`
+    Добавить метод getUserInfo(), которая, выводит строку:
+    `User ${имя} is ${возраст} years old and has ${кол-во друщзей} friends`
 
-Создать несколько объектов пользователя User и с помощью 
-функции getUserInfo вывести строку в консоль.
-*/
+    Создать несколько объектов пользователя User и с помощью 
+    функции getUserInfo вывести строку в консоль.
+    */
 
 
-// function User(name, isActive, age, friends) {
+    function User(name, isActive, age, friends) {
 
-//   this.name = name;
-//   this.isActive = isActive;
-//   this.age = age;
-//   this.friends = friends;
+      this.name = name;
+      this.isActive = isActive;
+      this.age = age;
+      this.friends = friends;
 
 
 
 
-//   this.getUserInfo = function () {
-//     console.log(`
-//     name: ${this.name}, 
-//     isActive: ${this.isActive}, 
-//     age: ${this.age}
-//     friends: ${this.friends}
-//     `);
-//   }
+      this.getUserInfo = function () {
+        console.log(`
+    name: ${this.name}, 
+    isActive: ${this.isActive}, 
+    age: ${this.age}
+    friends: ${this.friends}
+    `);
+      }
 
-// }
+    }
 
 
-// const poly = new User('Poly', true, 18, 5);
-// const max = new User('Max', false, 41, 37);
+    const poly = new User('Poly', true, 18, 5);
+    const max = new User('Max', false, 41, 37);
 
-// console.log(poly);
-// poly.getUserInfo();
+    console.log(poly); poly.getUserInfo();
 
-// console.log(max);
-// max.getUserInfo();
+    console.log(max); max.getUserInfo();
 
 
 
-// ======================tassk 6 =================
+    // ======================tassk 6 =================
 
-/*  
-  Расставьте отсутствующие this 
-  в методах объекта store
-*/
+    /*  
+      Расставьте отсутствующие this 
+      в методах объекта store
+    */
 
-// const store = {
-//   products: ['bread', 'cheese', 'milk', 'apples'],
-//   managers: ['poly', 'mango', 'ajax'],
-  
-//   addManager(manager) {
-//     this.managers.push(this.manager);
-    
-//     console.log(this.managers);
-//   },
-//   removeManager(manager) {
-//     const idx = this.managers.indexOf(this.manager);
-    
-//     this.managers.splice(idx, 1);
-    
-//     console.log(this.managers);
-//   },
-//   getProducts() {
-//     console.log(this.products);
-    
-//     return this.products;
-//   }
-// }
+    const store = {
+      products: ['bread', 'cheese', 'milk', 'apples'],
+      managers: ['poly', 'mango', 'ajax'],
 
-// store.addManager('chelsey'); // ['poly', 'mango', 'ajax', 'chelsey']
+      addManager(manager) {
+        this.managers.push(this.manager);
 
-// store.removeManager('mango'); // ['poly', ajax', 'chelsey']
+        console.log(this.managers);
+      },
+      removeManager(manager) {
+        const idx = this.managers.indexOf(this.manager);
 
-// store.getProducts(); // ['bread', 'cheese', 'milk', 'apples']
+        this.managers.splice(idx, 1);
 
+        console.log(this.managers);
+      },
+      getProducts() {
+        console.log(this.products);
 
-// ======================tassk 8 =================
+        return this.products;
+      }
+    }
 
-/*  
-  Расставьте отсутствующие this в конструкторе объектов Account
-*/
+    store.addManager('chelsey'); // ['poly', 'mango', 'ajax', 'chelsey']
 
-// function Account({ login, password, type = 'regular' }) {
-//   this.login = login;
-//   this.password = password;
-//   this.type = type;
+    store.removeManager('mango'); // ['poly', ajax', 'chelsey']
 
-//   this.changePassword = function (newPassword) {
-//     this.password = newPassword;
+    store.getProducts(); // ['bread', 'cheese', 'milk', 'apples']
 
-//     console.log(password);
-//   };
 
-//   this.getAccountInfo = function() {
-//     console.log(`
-//       Login: ${this.login}, 
-//       Pass: ${this.password}, 
-//       Type: ${this.type}
-//     `);
-//   };
-// };
+    // ======================tassk 8 =================
 
-// const account = new Account({
-//   login: 'Mango',
-//   password: 'qwe123', 
-//   type: 'premium'
-// });
+    /*  
+      Расставьте отсутствующие this в конструкторе объектов Account
+    */
 
-// console.log( account.login ); // 'Mango'
-// console.log( account.password ); // 'qwe123'
-// console.log( account.type ); // 'premium'
+    function Account({
+      login,
+      password,
+      type = 'regular'
+    }) {
+      this.login = login;
+      this.password = password;
+      this.type = type;
 
-// console.log( account.changePassword('asdzxc') ); // 'asdzxc'
+      this.changePassword = function (newPassword) {
+        this.password = newPassword;
 
-// console.log( 
-//   account.getAccountInfo() 
-// ); // Login: 'Mango', Pass: 'asdzxc', Type: 'premium'
+        console.log(password);
+      };
+
+      this.getAccountInfo = function () {
+        console.log(`
+      Login: ${this.login}, 
+      Pass: ${this.password}, 
+      Type: ${this.type}
+    `);
+      };
+    };
+
+    const account = new Account({
+      login: 'Mango',
+      password: 'qwe123',
+      type: 'premium'
+    });
+
+    console.log(account.login); // 'Mango'
+    console.log(account.password); // 'qwe123'
+    console.log(account.type); // 'premium'
+
+    console.log(account.changePassword('asdzxc')); // 'asdzxc'
+
+    console.log(
+      account.getAccountInfo()
+    ); // Login: 'Mango', Pass: 'asdzxc', Type: 'premium'
