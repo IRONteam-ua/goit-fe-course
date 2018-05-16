@@ -62,7 +62,7 @@ console.log(
 Функция возвращает количество свойств.
 */
 
-// function countOwnProps(obj) {
+function countOwnProps(obj) {
 
 let objProperty = 0;
 
@@ -92,7 +92,7 @@ console.log(
       b: 3,
       c: 'hello'
     })
-    // ); // 3
+    ); // 3
 
     // ======================tassk 4 =================
 
