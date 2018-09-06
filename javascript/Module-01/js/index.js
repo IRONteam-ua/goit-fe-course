@@ -92,31 +92,31 @@ if (invalidInput) {
     } else {
 
         if (integer <= taba) {
-            userGroupSelection = confirm('Вы согласны быть в группе \'taba\' ?')
+            userGroupSelection = confirm('Вы согласны быть в группе \'taba\' ?');
         };
         if (userGroupSelection) {
             alert('Приятного путешествия в группе \'taba\'');
         } else {
 
             if (integer <= sharm) {
-                userGroupSelection = confirm('Вы согласны быть в группе \'sharm\' ?')
+                userGroupSelection = confirm('Вы согласны быть в группе \'sharm\' ?');
             };
             if (userGroupSelection) {
                 alert('Приятного путешествия в группе \'sharm\'');
             } else {
 
                 if (integer <= hurgada) {
-                    userGroupSelection = confirm('Вы согласны быть в группе \'hurgada\' ?')
+                    userGroupSelection = confirm('Вы согласны быть в группе \'hurgada\' ?');
                 };
                 if (userGroupSelection) {
                     alert('Приятного путешествия в группе \'hurgada\'');
                 } else {
-                    alert("Нам очень жаль, приходите еще!")
+                    alert("Нам очень жаль, приходите еще!");
                 };
             }
 
         }
     }
 } else {
-    alert("Ошибка ввода")
+    alert("Ошибка ввода");
 };
