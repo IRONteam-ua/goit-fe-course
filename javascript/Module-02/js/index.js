@@ -27,21 +27,30 @@ let total = 0;
 
 
 do {
-    userInput = prompt('Ввесте  число', '');
-    const inNumber = Number(userInput);
-    numbers.push(inNumber);
 
-} while (userInput !== null && userInput !== Number.isNaN(userInput) && userInput !== '');
+ 
+    userInput = prompt("Ведите число!");
 
-for (let item of numbers) {
-    total += item
+  let inNumber = Number(userInput);
+  if (!Number.isNaN(inNumber)) {
+    numbers.push(inNumber)
+  } else {
+    alert("Выввели не число! Пробуйте еще раз!");
+  }
+
+} while (userInput !== null);
+
+for (let i = 0, max = numbers.length; i < max; i += 1) {
+
+  total += numbers[i];
+
+}
+if (numbers.length > 0) {
+  alert(`Обращая сумма ${total}`);
 }
 
-if (total > 0) {
 
-    alert(`Общая сумма чисел равна ${total}`);
 
-}
 
 // console.log(numbers);
 
@@ -80,25 +89,24 @@ let attempts = 3;
 let userInputPass;
 
 
-do{
+do {
 
-    attempts -= 1;
-    if (attempts < 0) {
-      alert('У вас закончились попытки, аккаунт заблокирован!');
-      break;
-    }
+  attempts -= 1;
+  if (attempts < 0) {
+    alert('У вас закончились попытки, аккаунт заблокирован!');
+    break;
+  }
 
-    const inputPass = prompt ('Введите пароль');
-    userInputPass = passwords.includes(inputPass);
+  const inputPass = prompt('Введите пароль');
+  userInputPass = passwords.includes(inputPass);
 
-    
 
- 
-    if (userInputPass){
 
-        alert ('Добро пожаловать!');
-        break;
-    }
-    console.log (attempts);
+  if (userInputPass) {
 
-} while (  userInputPass === null || attempts < 0 );
+    alert('Добро пожаловать!');
+    break;
+  }
+  // console.log(attempts);
+
+} while (userInputPass === null || attempts < 0);
