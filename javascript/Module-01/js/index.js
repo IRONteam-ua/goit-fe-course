@@ -36,6 +36,10 @@ if (enterUserLogin === adminLogin) {
         alert('Доступ запрещен!')
     };
 
+}
+if (enterUserLogin === null) {
+    alert('Отменено пользователем!')
+
 } else {
     alert('Доступ запрещен!')
 };
@@ -74,35 +78,42 @@ const taba = 6;
 let userGroupSelection;
 
 
-const enerGroup = prompt ('Введите число необходимых мест');
-const integer = Number (enerGroup);
+const enerGroup = prompt('Введите число необходимых мест');
+const integer = Number(enerGroup);
 const invalidInput = enerGroup !== null && !Number.isNaN(enerGroup);
 
-if (invalidInput){
+if (invalidInput) {
 
     if (integer > 25 || integer <= 0) {
-      alert("Извение, мест нет. Максимальное количество мест - 25!");
-  }else{
-
-  if (integer <= taba) {
-    userGroupSelection = confirm('Вы согласны быть в группе \'taba\' ?')};
-    if (userGroupSelection ) {
-        alert('Приятного путешествия в группе \'taba\'');
+        alert("Извение, мест нет. Максимальное количество мест - 25!");
     } else {
 
-    if (integer <= sharm) {
-        userGroupSelection = confirm('Вы согласны быть в группе \'sharm\' ?')};
-        if (userGroupSelection ) {
-            alert('Приятного путешествия в группе \'sharm\'');
+        if (integer <= taba) {
+            userGroupSelection = confirm('Вы согласны быть в группе \'taba\' ?')
+        };
+        if (userGroupSelection) {
+            alert('Приятного путешествия в группе \'taba\'');
         } else {
 
-        if (integer <= hurgada) {
-            userGroupSelection = confirm('Вы согласны быть в группе \'hurgada\' ?')};
-            if (userGroupSelection ) {
-                alert('Приятного путешествия в группе \'hurgada\'');
-            } else { alert ("Нам очень жаль, приходите еще!")};
-        }
+            if (integer <= sharm) {
+                userGroupSelection = confirm('Вы согласны быть в группе \'sharm\' ?')
+            };
+            if (userGroupSelection) {
+                alert('Приятного путешествия в группе \'sharm\'');
+            } else {
+
+                if (integer <= hurgada) {
+                    userGroupSelection = confirm('Вы согласны быть в группе \'hurgada\' ?')
+                };
+                if (userGroupSelection) {
+                    alert('Приятного путешествия в группе \'hurgada\'');
+                } else {
+                    alert("Нам очень жаль, приходите еще!")
+                };
+            }
 
         }
-        }
-    }else { alert ("Ошибка ввода")};
+    }
+} else {
+    alert("Ошибка ввода")
+};
