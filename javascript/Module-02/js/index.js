@@ -86,27 +86,32 @@ if (numbers.length > 0) {
 
 const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
 let attempts = 3;
-let userInputPass;
+let userPassword;
+let checkPassword;
 
 
-do {
-
-  attempts -= 1;
-  if (attempts < 0) {
-    alert('У вас закончились попытки, аккаунт заблокирован!');
+while(attempts !== 0){
+  userPassword = prompt('Введите пароль:');
+  if(userPassword !== null){
+  checkPassword = passwords.includes(userPassword);
+    if(checkPassword){
+      alert('Добро пожаловать!');
+      break;
+    }
+    else{
+      alert('Неверный пароль!');
+      attempts-=1;
+        if(attempts > 0){
+          alert(`У вас осталось ${attempts} попытки!`);
+        }
+        else{
+          alert('У вас закончились попытки, аккаунт заблокирован.');
+        }
+    }
+  }
+  else{
     break;
   }
+}
 
-  const inputPass = prompt('Введите пароль');
-  userInputPass = passwords.includes(inputPass);
-
-
-
-  if (userInputPass) {
-
-    alert('Добро пожаловать!');
-    break;
-  }
-  // console.log(attempts);
-
-} while (userInputPass === null || attempts < 0);
+console.log(attempts);
