@@ -23,6 +23,8 @@
 
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
+const canceled = 'Отменено пользователем!';
+
 
 const enterUserLogin = prompt('введите логин');
 
@@ -32,16 +34,17 @@ if (enterUserLogin === adminLogin) {
 
     if (enterUserPass === adminPassword) {
         alert('Добро пожаловать!');
-    } else {
-        alert('Доступ запрещен!')
+    }
+    if (enterUserLogin === null) {
+        alert(canceled);
     };
 
 }
 if (enterUserLogin === null) {
-    alert('Отменено пользователем!')
+    alert(canceled);
 
 } else {
-    alert('Доступ запрещен!')
+    alert('Доступ запрещен!');
 };
 
 
