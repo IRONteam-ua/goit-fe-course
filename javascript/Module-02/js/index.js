@@ -31,28 +31,29 @@ do {
 
   userInput = prompt("Ведите число!");
 
+  if (userInput !== '' && userInput !== null) {
   let inNumber = Number(userInput);
   if (!Number.isNaN(inNumber)) {
     numbers.push(inNumber)
   } else {
-    alert("Выввели не число! Пробуйте еще раз!");
+    alert("Вы ввели не число! Пробуйте еще раз!");
   }
-
+  }
 } while (userInput !== null);
 
-for (let i = 0, max = numbers.length; i < max; i += 1) {
-
-  total += numbers[i];
-
-}
 if (numbers.length > 0) {
-  alert(`Обращая сумма ${total}`);
+  for (let items of numbers) {
+    total += items;
+ 
+}
+
+alert(`Обращая сумма ${total}`);
 }
 
 
 
 
-// console.log(numbers);
+console.log(numbers);
 
 
 
