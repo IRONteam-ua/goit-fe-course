@@ -28,8 +28,8 @@ let total = 0;
 
 do {
 
- 
-    userInput = prompt("Ведите число!");
+
+  userInput = prompt("Ведите число!");
 
   let inNumber = Number(userInput);
   if (!Number.isNaN(inNumber)) {
@@ -90,28 +90,25 @@ let userPassword;
 let checkPassword;
 
 
-while(attempts !== 0){
+while (attempts !== 0) {
   userPassword = prompt('Введите пароль:');
-  if(userPassword !== null){
-  checkPassword = passwords.includes(userPassword);
-    if(checkPassword){
+  if (userPassword !== null) {
+    checkPassword = passwords.includes(userPassword);
+    if (checkPassword) {
       alert('Добро пожаловать!');
       break;
-    }
-    else{
+    } else {
       alert('Неверный пароль!');
-      attempts-=1;
-        if(attempts > 0){
-          alert(`У вас осталось ${attempts} попытки!`);
-        }
-        else{
-          alert('У вас закончились попытки, аккаунт заблокирован.');
-        }
+      attempts -= 1;
+      if (attempts > 0) {
+        alert(`У вас осталось ${attempts} попытки!`);
+      } else {
+        alert('У вас закончились попытки, аккаунт заблокирован.');
+      }
     }
-  }
-  else{
+  } else {
     break;
   }
 }
 
-console.log(attempts);
+// console.log(attempts);
