@@ -23,9 +23,9 @@
 
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
-const canceled = 'Отменено пользователем!';
-const welcome = 'Добро пожаловать!';
-const accessIsDenied = 'Доступ запрещен!';
+const USER_CANCELED = 'Отменено пользователем!';
+const WELCOME_MESSAGE = 'Добро пожаловать!';
+const ACCES_IS_DENITED = 'Доступ запрещен!';
 
 
 const enterUserLogin = prompt('введите логин');
@@ -35,18 +35,19 @@ if (enterUserLogin === adminLogin) {
     const enterUserPass = prompt('введите пароль')
 
     if (enterUserPass === adminPassword) {
-        alert(welcome);
-    }
-    if (enterUserLogin === null) {
-        alert(canceled);
-    };
+        alert(WELCOME_MESSAGE);
 
-}
-if (enterUserLogin === null) {
-    alert(canceled);
+    }else if (enterUserPass === null) {
+        alert(USER_CANCELED);
+
+    } else {
+        alert(ACCES_IS_DENITED);
+    }; 
+}else if (enterUserLogin === null) {
+    alert(USER_CANCELED);
 
 } else {
-    alert(accessIsDenied);
+    alert(ACCES_IS_DENITED);
 };
 
 
