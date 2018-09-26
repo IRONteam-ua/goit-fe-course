@@ -28,16 +28,12 @@ let total = 0;
 
 do {
 
-
   userInput = prompt("Ведите число!");
 
-  if (userInput !== '' && userInput !== null) {
-  let inNumber = Number(userInput);
-  if (!Number.isNaN(inNumber)) {
-    numbers.push(inNumber)
-  } else {
+  if (!Number.isNaN(+userInput) ) {
+    numbers.push(userInput)
+  } else if (userInput !==null){
     alert("Вы ввели не число! Пробуйте еще раз!");
-  }
   }
 } while (userInput !== null);
 
