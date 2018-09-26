@@ -40,16 +40,39 @@
 
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
-const isLoginValid = function(login) {
+const isLoginValid = function (login) {
   // код
+  const min = 4;
+  const max = 16;
+
+  if (login.length >= min && login.length <= max) {
+    return true
+  } else {
+    return false
+  }
 };
 
-const isLoginUnique = function(allLogins, login) {
-  // код
+
+const isLoginUnique = function (addLogin, logins) {
+  return addLogin.includes(logins);
 };
 
-const addLogin = function(login) {
-  // код
+const addLogin = function (login) {
+
+  if (!isLoginValid(login)) {
+    console.log('Ошибка! Логин должен быть от 4 до 16 символов');
+    return;
+  }
+
+  if (isLoginUnique(logins, login)) {
+    console.log('Такой логин уже есть!');
+    return;
+  }
+
+  logins.push();
+  console.log('Логин успешно добавлен!');
+
+  return logins;
 };
 
 // Вызовы функции для проверки
