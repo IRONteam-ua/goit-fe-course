@@ -42,20 +42,14 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 const isLoginValid = function (login) {
   // код
-  const min = 4;
-  const max = 16;
+  const MIN_CHARACTERS = 4;
+  const MAX_CHARACTERS = 16;
 
-  if (login.length >= min && login.length <= max) {
-    return true
-  } else {
-    return false
-  }
+  return (login.length >= MIN_CHARACTERS && login.length <= MAX_CHARACTERS)
 };
 
 
-const isLoginUnique = function (addLogin, logins) {
-  return addLogin.includes(logins);
-};
+const isLoginUnique = (addLogin, logins) => addLogin.includes(logins);
 
 const addLogin = function (login) {
 
@@ -64,14 +58,13 @@ const addLogin = function (login) {
     return;
   }
 
-  if (isLoginUnique(logins, login)) {
-    console.log('Такой логин уже есть!');
+  if (!isLoginUnique(logins, login)) {
+    logins.push()
+    console.log('Логин успешно добавлен!');
     return;
+  } else {
+    console.log('Такой логин уже используется!');
   }
-
-  logins.push();
-  console.log('Логин успешно добавлен!');
-
   return logins;
 };
 
