@@ -50,48 +50,40 @@ function Cashier(name, productDatabase) {
   this.name = name; //строка, имя кассира, передается при вызове конструктора
   this.productDatabase = productDatabase; //объект база данных продуктов, передается при вызове конструктора
   this.customerMoney = 0; //число, сумма введенная пользователем при запросе денег, всегда начинается с 0 
-  this.totalPrice = 0;
-  this.countChange = 0;
 
-  this.getCustomerMoney = function (value) {
-    return this.customerMoney = 300;
+
+
+  this.getCustomerMoney = value => {
+    this.customerMoney = value;
   }
 
   this.countTotalPrice = function (order) { // метод, получает объект списока покупок, считает общую стоимость покупок
+    let totalPrice = 0;
 
-    for (let key in order) {
-
-      this.totalPrice += order[key] * this.productDatabase[key];
+    for (const elem in order) {
+      totalPrice += order[elem] * this.productDatabase[elem];
     }
-    return this.totalPrice;
+    return totalPrice;
   };
 
-  this.countChange = function (totalPrice) { // метод, считает сдачу, разницу между общей суммой покупок и деньгами покупателя.
-
-    if (!this.customerMoney < this.totalPrice) {
-
-      return this.changeAmount = this.customerMoney - this.totalPrice;
-    }
-    return null;
+  this.countChange = totalPrice => {
+    return this.customerMoney > totalPrice ? this.customerMoney - totalPrice : null; 
+  };       
+  
+  this.onSuccess = change => {
+    console.log(`Спасибо за покупку, ваша сдача ${change}!`);
   };
 
-  this.onSuccess = function () {
+  this.onError = () => {
+    console.log('Очень жаль, вам не хватает денег на покупки');
+  };
 
-    return console.log(`Спасибо за покупку, ваша сдача ${change}!`)
-
-  }
-
-  this.onError = function () {
-
-    return console.log('Очень жаль, вам не хватает денег на покупки')
-
-  }
-
-  this.reset = function () {
+  this.reset = () => {
     this.customerMoney = 0;
-  }
+  };
+};
 
-}
+
 
 
 /* Заказ пользователя хранится в виде объекта следующего формата. "имя-продукта":"количество-единиц" */
@@ -121,11 +113,12 @@ console.log(totalPrice); // 110
 // Вызываем getCustomerMoney для запроса денег покупателя
 mango.getCustomerMoney(300);
 
+
 // Проверяем что в поле с деньгами пользователя
 console.log(mango.customerMoney); // 300
 
 // Вызываем countChange для подсчета сдачи
-const change = mango.countChange();
+const change = mango.countChange(totalPrice);
 
 // Проверяем что нам вернул countChange
 console.log(change); // 190
