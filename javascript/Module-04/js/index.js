@@ -12,7 +12,7 @@ const products = {
   milk: 15,
   apples: 20,
   chicken: 50,
-  cheese: 40,
+  cheese: 40
 };
 
 /* 
@@ -49,15 +49,14 @@ function Cashier(name, productDatabase) {
 
   this.name = name; //строка, имя кассира, передается при вызове конструктора
   this.productDatabase = productDatabase; //объект база данных продуктов, передается при вызове конструктора
-  this.customerMoney = 0; //число, сумма введенная пользователем при запросе денег, всегда начинается с 0 
-
-
+  this.customerMoney = 0; //число, сумма введенная пользователем при запросе денег, всегда начинается с 0
 
   this.getCustomerMoney = value => {
     this.customerMoney = value;
-  }
+  };
 
-  this.countTotalPrice = function (order) { // метод, получает объект списока покупок, считает общую стоимость покупок
+  this.countTotalPrice = function(order) {
+    // метод, получает объект списока покупок, считает общую стоимость покупок
     let totalPrice = 0;
 
     for (const elem in order) {
@@ -67,24 +66,23 @@ function Cashier(name, productDatabase) {
   };
 
   this.countChange = totalPrice => {
-    return this.customerMoney > totalPrice ? this.customerMoney - totalPrice : null; 
-  };       
-  
+    return this.customerMoney > totalPrice
+      ? this.customerMoney - totalPrice
+      : null;
+  };
+
   this.onSuccess = change => {
     console.log(`Спасибо за покупку, ваша сдача ${change}!`);
   };
 
   this.onError = () => {
-    console.log('Очень жаль, вам не хватает денег на покупки');
+    console.log("Очень жаль, вам не хватает денег на покупки");
   };
 
   this.reset = () => {
     this.customerMoney = 0;
   };
-};
-
-
-
+}
 
 /* Заказ пользователя хранится в виде объекта следующего формата. "имя-продукта":"количество-единиц" */
 const order = {
@@ -95,8 +93,7 @@ const order = {
 };
 
 /* Пример использования */
-const mango = new Cashier('Mango', products);
-
+const mango = new Cashier("Mango", products);
 
 // Проверяем исходные значения полей
 console.log(mango.name); // Mango
@@ -113,7 +110,6 @@ console.log(totalPrice); // 110
 // Вызываем getCustomerMoney для запроса денег покупателя
 mango.getCustomerMoney(300);
 
-
 // Проверяем что в поле с деньгами пользователя
 console.log(mango.customerMoney); // 300
 
@@ -128,7 +124,7 @@ if (change !== null) {
   // При успешном обслуживании вызываем метод onSuccess
   mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
 } else {
-  // При неудачном обслуживании вызываем метод onError   
+  // При неудачном обслуживании вызываем метод onError
   mango.onError(); // Очень жаль, вам не хватает денег на покупки
 }
 
