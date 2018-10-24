@@ -1,487 +1,223 @@
 ﻿"use strict";
 
-const additionalTasks = confirm('Показать дополнительные задания?')
+const additionalTasks = confirm("Показать дополнительные задания?");
 
 if (additionalTasks) {
 
-  {
-    // ================== task 1 ================== 
-
-    /*  Перепишите все циклы for используя методы map, filter, find, reduce и т. д. */
-
-    /* 
-      Функция findGreaterThan получает два аргумента - число и массив.
-      Возвращает новый массив, содержащий элементы которые больше числа.
-    */
-    const findGreaterThan = (num, arr) => {
-
-      // let arr = [];
-      // for (let i = 0, max = arr.length; i < max; i += 1) {
-      //   if (arr[i] > num) {
-      //     result.push(arr[i]);
-      //   }
-      // }
-
-      // return result;
-      return arr.filter(element => element > num);
-    };
-
-
-
-    console.log(findGreaterThan(2, [1, 2, 3, 4, 5])); // [3, 4, 5,]
-    console.log(findGreaterThan(3, [1, 2, 3, 4, 5])); // [4, 5,]
-    console.log(findGreaterThan(1, [1, 2, 3, 4, 5])); // [2, 3, 4, 5,]
-
-    /* 
-      Функция multiplyBy принимает два аргумента - число и массив. 
-      Возвращает массив все значения которого умножены на число.
-    */
-    const multiplyBy = (num, arr) => {
-      // let result = [];
-
-      // for (let i = 0, max = arr.length; i < max; i += 1) {
-      //   result.push(arr[i] * num);
-      // }
-
-      // return result;
-
-      return arr.map(element => element * num);
-
-    };
-
-    console.log(multiplyBy(2, [1, 2, 3, 4, 5])); // [2, 4, 6, 8, 10]
-    console.log(multiplyBy(3, [1, 2, 3, 4, 5])); // [3, 6, 9, 12, 15]
-    console.log(multiplyBy(4, [1, 2, 3, 4, 5])); // [4, 8, 12, 16, 20]
-
-    /* 
-      Функция summAllNumbers принимает любое число аргументов.
-      Возвращает число - сумму всех аргументов.
-    */
-    function summAllNumbers(...args) {
-      // let accumulator = 0;
-
-      // for (let i = 0, max = args.length; i < max; i += 1) {
-      //   accumulator += args[i];
-      // }
-
-      // return accumulator;
-
-      return args.reduce((acc, value) => acc + value, 0);
-    }
-
-    console.log(summAllNumbers(1, 2, 3)); // 6
-    console.log(summAllNumbers(1, 2, 3, 4)); // 10
-    console.log(summAllNumbers(1, 2, 3, 4, 5)); // 15
-
-    /* 
-      Функция findEvery получает два аргумента - число и массив.
-      Возвращает true если все элементы массива больше или равны числу.
-      Иначе если есть хоть один элемент меньше числа, то возвращается false.
-    */
-    const findEvery = (num, arr) => {
-      // for (let i = 0, max = arr.length; i < max; i += 1) {
-      //   if (arr[i] < num) {
-      //     return false;
-      //   }
-      // }
-
-      // return true;
-
-      return arr.every(element => element >= num)
-    };
-
-    console.log(findEvery(5, [5, 6, 7, 8, 9])); // true
-    console.log(findEvery(6, [5, 6, 7, 8, 9])); // false
-    console.log(findEvery(4, [5, 6, 7, 8, 9])); // true
-  }
-
-
-
-  // ================== task 2 ================== 
-
-  /*
-  Напишите функию getPropValues(arr, prop), принимающую 
-  параметры arr - массив, и prop - имя ключа в объекте. 
+  { // ================== task 1 ==================
+    /*
+  Создать функцию-конструктор Account, которая добавляет будущему
+  объекту поля login, email и friendsCount. 
   
-  Функция должна возвращать массив всех значений этого ключа из arr.
+  В prototype функции-конструктора добавить метод getAccountInfo(), 
+  который выводит в консоль значения полей login, email и friendsCount. 
   
-  PS: обязательно используйте функциональные методы массивов, никаких for!
+  Обратите внимание, метод будет всего один, в поле prototype функции-конструктора, 
+  а использовать его смогут все экземпляры, по ссылке.
+  
+  Создать несколько экземпляров с разными значениями свойств, вывести их в консоль.
 */
-  {
-    const guests = [{
-        name: "Mango",
-        age: 20,
-        isActive: true
-      },
-      {
-        name: "Poly",
-        age: 18,
-        isActive: false
-      },
-      {
-        name: "Ajax",
-        age: 30,
-        isActive: true
-      },
-      {
-        name: "Chelsey",
-        age: 45,
-        isActive: false
-      }
-    ];
+
+    function Account(login, email, friendsCount) {
+      this.login = login;
+      this.email = email;
+      this.friendsCount = friendsCount;
+    };
 
 
-    const getPropValues = (arr, key) => {
-      return guests.map(element => element[key])
-    }
+    Account.prototype.getAccountInfo = function () {
+      console.log(`Your account login - ${this.login},
+             email - ${this.email},  
+             friendsCount - ${this.friendsCount}`);
+    };
 
-    // Вызовы функции для проверки
-    console.log(getPropValues(guests, "name")); // ['Mango', 'Poly', 'Ajax', 'Chelsey']
 
-    console.log(getPropValues(guests, "age")); // [20, 18, 30, 45]
+    const mango = new Account("Mango", "mango@blabla.com", 12);
+    const poly = new Account("Poly", "poly_24@qweqwe.net", 24);
+    const ajax = new Account("Ajax", "admin@ajax.info", 8);
 
-    console.log(getPropValues(guests, "isActive")); // [true, false, true, false]
+    console.log(mango);
+    console.log(poly);
+    console.log(ajax);
+
+    mango.getAccountInfo();
+    poly.getAccountInfo();
+    ajax.getAccountInfo();
   }
 
-  // ================== task 3 ================== 
-  {
-
-    /*      
-  Напишите функцию setGuestState(guests, period), где
-  guests - массив гостей, period - кол-во дней после
-  которого считается что гость не активен.
+  { // ================== task 2 ==================
+    /*
+  Напишите функцию-конструктор StringBuilder.
+  
+  На вход она получает один параметр string - строку.
+  
+  Добавьте следующие методы в prototype функции-конструктора.
+  
+    - getValue() - выводит в консоль текущее значение поля value
+  
+    - append(str) - получает парметр str - строку и добавляет 
+      ее в конец значения поля value
     
-  Если значение поля inactiveDays болше чем period, 
-  поставить для isActive значение false.
+    - prepend(str) - получает парметр str - строку и добавляет 
+      ее в начало значения поля value
+  
+    - pad(str) - получает парметр str - строку и добавляет 
+      ее в начало и в конец значения поля value
+*/
+    function StringBuilder(string = "") {
+      this.value = string;
+
+
+
+      // this.showValue = function (){
+      //     console.log (this.value)}
+    }
+
+    // this.append.prototype = function (){
+    //     console.log (this.value)
+    // }
+
+    // this.prepend = function (){
+    //     console.log (this.value)
+    // }
+
+    // this.pad = function (){
+    //     console.log (this.value)
+    // }
+
+
+
+    StringBuilder.prototype.showValue = function () {
+      return this.value;
+    };
+
+    StringBuilder.prototype.append = function (str) {
+      return this.value = this.value + str;
+    };
+    StringBuilder.prototype.prepend = function (str) {
+      return this.value = str + this.value;
+    };
+    StringBuilder.prototype.pad = function (str) {
+      return this.value = str + this.value + str;
+    };
+
+    const myString = new StringBuilder('.');
+
+    myString.append('^');
+    console.log(myString.showValue()); // '.^'
+
+    myString.prepend('^');
+    console.log(myString.showValue()); // '^.^'
+
+    myString.pad('=');
+    console.log(myString.showValue()); // '=^.^='
+  }
+
+  { // ================== task 3 ==================
+    /*
+  Создайте класс Car с указанными полями и методами.
+*/
+
+    class Car {
+      constructor(maxSpeed) {
+        /*
+      Добавьте свойства:
+        - speed - для отслеживания текущей скорости, изначально 0.
+        
+        - maxSpeed - для хранения максимальной скорости 
+        
+        - running - для отслеживания заведен ли автомобиль, 
+          возможные значения true или false. Изначально false.
+          
+        - distance - содержит общий киллометраж, изначально с 0
+    */
+      }
+
+      turnOn() {
+        // Добавьте код для того чтобы завести автомобиль
+        // Просто записывает в свойство running значание true
+      }
+
+      turnOff() {
+        // Добавьте код для того чтобы заглушить автомобиль
+        // Просто записывает в свойство running значание false
+      }
+
+      accelerate(spd) {
+        // Записывает в поле speed полученное значение, при условии что
+        // оно не больше чем значение свойства maxSpeed
+      }
+
+      decelerate(spd) {
+        // Записывает в поле speed полученное значение, при условии что
+        // оно не больше чем значение свойства maxSpeed и не меньше нуля
+      }
+
+      drive(hours) {
+        // Добавляет в поле distance киллометраж (hours умноженное на значение поля speed),
+        // но только в том случае если машина заведена!
+      }
+    }
+  }
+
+  { // ================== task 4 ==================
+    /*
+  Добавьте к классу Car из предыдущего задания статический
+  метод getSpecs, который получает объект-машину как аргумент
+  и выводит в консоль значения полей maxSpeed, running и distance.
+  
+  Использование будет выглядеть следующим образом:
+  
+  const someCar = new Car(100);
+  someCar.turnOn();
+  someCar.drive(2);
+  
+  Car.getSpecs(someCar); // maxSpeed: 100, running: true, distance: 200
+*/
+  }
+
+  { // ================== task 5 ==================
+    /*
+  Добавьте классу Car свойство value - цена автомобиля.
+  
+  Добавьте классу Car использование геттеров и сеттеров для свойства value.
+  
+  Геттер вернет текущей значение поля this._value
+  Сеттер запишет в поле this._value то что ему присвоят
+  
+  PS: имя геттера и сеттера не может совпадать с полем, поэтому используйте
+    не this.value а this._value
     
-  Если же значение inactiveDays меньше чем period,
-  поставить для isActive значение true
+  Использование выглядит следующим образом:
   
-  PS: обязательно используйте функциональные методы массивов, никаких for!
+  const myCar = new Car(50, 2000);
+  
+  myCar.value; // 2000
+  myCar.value = 4000;
+  myCar.value; // 4000
 */
 
-    const users = [{
-        name: 'Mango',
-        inactiveDays: 15,
-        isActive: true
-      },
-      {
-        name: 'Poly',
-        inactiveDays: 8,
-        isActive: false
-      },
-      {
-        name: 'Ajax',
-        inactiveDays: 32,
-        isActive: false
-      },
-      {
-        name: 'Chelsey',
-        inactiveDays: 85,
-        isActive: true
+    class Car {
+      constructor(maxSpeed, value) {
+        // ... код
+        this._value = value;
       }
-    ];
-
-
-    const setGuestState = (guests, period) => {
-      return guests.map(user => {
-        if (user.inactiveDays > period) {
-          return {
-            ...user,
-            isActive: false,
-          }
-        } else {
-          return {
-            ...user,
-            isActive: true,
-          }
-        }
-      })
+      // ... код
     }
-
-
-    // Вызовы функции для проверки
-    console.log(
-      setGuestState(users, 10)
-    ); // Объекты Mango, Ajax, Chelsey получат isActive false, а Poly наоборот true
-
-    console.log(
-      setGuestState(users, 20)
-    ); // Объекты Ajax, Chelsey получат isActive false, а Mango и Poly наоборот true
-
-    console.log(
-      setGuestState(users, 50)
-    ); // Объект Chelsey получит isActive false, а Mango, Poly и Ajax наоборот true
-  }
-  // ================== task 4 ================== 
-  {
-    /*
-      Напишите функию getActiveGuests(guests), принимающую 
-      один параметр guests - массив объектов гостей. 
-      
-      Функция должна возвращать массив объектов гостей,
-      значение поля isActive которых true.
-             
-      PS: обязательно используйте функциональные методы массивов, никаких for!
-    */
-
-    const guests = [{
-        name: "Mango",
-        age: 20,
-        isActive: true
-      },
-      {
-        name: "Poly",
-        age: 18,
-        isActive: false
-      },
-      {
-        name: "Ajax",
-        age: 30,
-        isActive: true
-      },
-      {
-        name: "Chelsey",
-        age: 45,
-        isActive: false
-      }
-    ];
-
-    const getActiveGuests = (guests) => {
-      return guests.filter(user => user.isActive)
-    };
-
-    // Вызовы функции для проверки
-    console.log(getActiveGuests(guests)); // массив из 2-х объектов Mango и Ajax
-  }
-  // ================== task 5 ================== 
-  {
-    /*      
-      Напишите функцию getGuestsOlderThan(guests, age), где 
-      guests - массив объектов гостей, age - предел возраста 
-      для сортировки. 
-      
-      Функция возвращает массив объектов значение свойства 
-      age которых больше чем параметр age.
-      
-      PS: обязательно используйте функциональные методы массивов, никаких for!
-    */
-
-    const guests = [{
-        name: "Mango",
-        age: 20,
-        isActive: true
-      },
-      {
-        name: "Poly",
-        age: 18,
-        isActive: false
-      },
-      {
-        name: "Ajax",
-        age: 30,
-        isActive: true
-      },
-      {
-        name: "Chelsey",
-        age: 45,
-        isActive: false
-      }
-    ];
-
-    const getGuestsOlderThan = (guests, age) => {
-      return guests.filter(guests =>
-        guests.age > age
-      )
-
-
-    }
-    // Вызовы функции для проверки
-    console.log(getGuestsOlderThan(guests, 25)); // массив из 2-х объектов Ajax и Chelsey
-
-    console.log(getGuestsOlderThan(guests, 35)); // [{name: 'Chelsey', age: 45, isActive: false}]
-
-    console.log(getGuestsOlderThan(guests, 55)); // []
-  }
-  // ================== task 6 ================== 
-
-  {
-    /*
-      Напишите функию getGuestById(guests, id), принимающую 
-      guests - массив объектов гостей, id - идентификатор (число). 
-      
-      Функция должна возвращать объект гостя с совпадающим id.
-      
-      PS: обязательно используйте функциональные методы массивов, никаких for!
-    */
-
-    const guests = [{
-        id: 1,
-        name: 'Mango',
-        age: 20
-      },
-      {
-        id: 2,
-        name: 'Poly',
-        age: 18
-      },
-      {
-        id: 3,
-        name: 'Ajax',
-        age: 30
-      },
-      {
-        id: 4,
-        name: 'Chelsey',
-        age: 45
-      }
-    ];
-
-    const getGuestById = (guests, num) => {
-      return guests.filter(guests => guests.id === num)
-    }
-
-    // Вызовы функции для проверки
-    console.log(
-      getGuestById(guests, 3)
-    ); // {id: 3, name: 'Ajax', age: 30}
-
-    console.log(
-      getGuestById(guests, 1)
-    ); // {id: 1, name: 'Mango', age: 20}
-
-    console.log(
-      getGuestById(guests, 5)
-    ); // undefined
-
   }
 
-  // ================== task 7 ================== 
-
-  {
-    /*
-      Используя метод reduce, посчитайте сумму 
-      всех значений свойств объекта order.
-    */
-    const order = {
-      bread: 10,
-      apples: 25,
-      chicken: 60,
-      milk: 15,
-      cheese: 40
-    };
-
-    const sum = Object.values(order).reduce((acc, elem) => acc + elem, 0);
-
-    console.log(sum); // 150
+  { // ================== task 6 ==================
   }
 
-  // ================== task 8 ================== 
-
-  {
-    /*
-  Напишите функцию getTotalPrice(products, order), где 
-  products - объект со свойствами "имя продукта":"цена за единицу"
-  order - объект со свойствами "имя продукта":"количество единиц".
-  
-  Функция возвращает общую сумму стоимости всех продуктов заказа.
-  
-  PS: используйте метод reduce
-*/
-
-const products = {
-  bread: 10,
-  milk: 15,
-  apples: 20,
-  cheese: 30,
-  chicken: 40
-};
-
-const orderA = {
-  bread: 2,
-  apples: 4,
-  chicken: 1
-};
-
-const orderB = {
-  bread: 1,
-  milk: 2,
-  cheese: 3
-};
-
-const getTotalPrice = (products, order) => {
-
-let arrProducts = Object.values(products)
-let arrOrder = Object.values(order )
-
-console.log (arrProducts)
-console.log (arrOrder)
-
-let arrConcat = [];
-
-arrConcat.concat([arrProducts], [arrOrder]);
-
-console.log (arrConcat)
-  // let assign = console.log (Object.assign(products, order));
-  
-  
-  
-
-
-  
-
-}
-
-// Вызовы функции для проверки
-console.log(getTotalPrice(products, orderA)); // 140
-
-console.log(getTotalPrice(products, orderB)); // 130
+  { // ================== task 7 ==================
   }
 
-  // ================== task 9 ================== 
+  { // ================== task 8 ==================
+  }
 
+  { // ================== task 9 ==================
+  }
 
-{
-
-  /*     
-  Напишите функию allGuestsActive(guests), принимающую 
-  один параметр guests - массив объектов гостей. 
-  
-  Функция должна возвращать true если значение поля isActive 
-  всех объектов true, в противном случае false.
-  
-  PS: используйте метод every или some, никаких for!
-*/
-
-
-const guestsA = [
-  { name: "Mango", isActive: true },
-  { name: "Poly", isActive: false },
-  { name: "Ajax", isActive: true }
-];
-
-const guestsB = [
-  { name: "Mango", isActive: true },
-  { name: "Poly", isActive: true },
-  { name: "Ajax", isActive: true }
-];
-
-
-const allGuestsActive = guests =>
-  guests.every (guests => guests.isActive)
-
-
-// Вызовы функции для проверки
-console.log(allGuestsActive(guestsA)); // false
-
-console.log(allGuestsActive(guestsB)); // true
-}
-
-  // ================== task 10 ================== 
-
-
-
-
-
-
+  { // ================== task 10 ==================
+  }
 }
